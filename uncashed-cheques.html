@@ -275,19 +275,29 @@ Missed payments or uncashed cheques from CRA</h1>
 	
 	<h2 id="expire">CRA cheques never expire</h2>
 	<p>CRA cheques never expire or become <span class="nowrap">stale-dated</span>. You can <a href="https://www.canada.ca/en/financial-consumer-agency/services/banking/cashing-government-cheque.html">cash your CRA cheque</a> at any financial institution in Canada. There is no charge to cash your CRA cheque.</p>
-	<h3 id="replaced-damaged">Replace a damaged cheque</h3>
-	<p>If you are having issues cashing an old CRA cheque, mail the cheque to the Imaging and Receiver General Operations Directorate and ask to have the payment reissued with a current date.</p>
 	<details>
-		<summary>Imaging and Receiver General Operations Directorate mailing address</summary>
-		<p id="imaging-address" class="mrgn-lft-lg">Imaging and Receiver General Operations Directorate<br> Returned Cheques<br> PO&nbsp;Box&nbsp;2000<br> Matane&nbsp;&nbsp;QC&nbsp;G4W&nbsp;4N5</p>
+		<summary>If the cheque is damaged</summary>
+		<h3 id="replaced-damaged">Replace a damaged cheque</h3>
+		<p>If you are having issues cashing an old CRA cheque, mail the cheque to the Imaging and Receiver General Operations Directorate and ask to have the payment reissued with a current date.</p>
+		<!--details>
+			<summary-->
+			<h4>Imaging and Receiver General Operations Directorate mailing address</h4>
+			<div class="well">
+				<p id="imaging-address" class="mrgn-lft-lg">Imaging and Receiver General Operations Directorate<br> Returned Cheques<br> PO&nbsp;Box&nbsp;2000<br> Matane&nbsp;&nbsp;QC&nbsp;G4W&nbsp;4N5</p>
+			</div>
+		<!--/details-->
 	</details>
-	<h3>Cheques issued to a deceased individual</h3>
-	<p>If you have a CRA cheque that was issued to a deceased individual, give the cheque to the person managing their tax affairs, or return the cheque to the <a href="#imaging-address">Imaging and Receiver General Operations Directorate's mailing address</a>.</p>
-	<p>If you are <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-someone-died/represent-deceased.html">managing the tax affairs of a deceased person</a>:</p>
-	<ul>
-		<li><a href="#cheque">check if they have any uncashed cheques on file</a></li>
-		<li>deposit the cheque into the estate account and complete their final tax return</li>
-	</ul>
+
+	<details>
+		<summary>If the cheque was issued to someone who died</summary>
+		<!--h3>Cheques issued to a deceased individual</h3-->
+		<p>If you have a CRA cheque that was issued to a deceased individual, give the cheque to the person managing their tax affairs, or return the cheque to the <a href="#imaging-address">Imaging and Receiver General Operations Directorate's mailing address</a>.</p>
+		<p>If you are <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-someone-died/represent-deceased.html">managing the tax affairs of a deceased person</a>:</p>
+		<ul>
+			<li><a href="#cheque">check if they have any uncashed cheques on file</a></li>
+			<li>deposit the cheque into the estate account and complete their final tax return</li>
+		</ul>
+	</details>
 	
 	<h2 id="direct-deposit">Never miss another payment</h2>
 	<p>The CRA will deposit your payments directly in your account with direct deposit:</p>
@@ -302,32 +312,38 @@ Missed payments or uncashed cheques from CRA</h1>
 		<li>
 			<h3>Check for uncashed cheques or missed payments</h3>
 			<div class="clearfix"></div>
-			<dl class="dl-horizontal brdr-0">
-				<dt>My Account</dt>
-				<dd id="my-account-cheques">
+			<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm">
+				<li id="my-account-cheques" class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">My Account</dt>
 					<ol>
 						<li>Sign into or register for <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">My Account</a></li>
 						<li>Select "Uncashed Cheques" on the My Account "Overview" page</li>
 					</ol>
-				</dd>
-				<dt>Represent a Client</dt>
-				<dd>
+				</li>
+				<li id="my-account-cheques" class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">Represent a Client</h3>
 					<p>You may check the account of someone you represent or the account of someone who died for uncashed cheques with <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client</a>.</p>
 					<p>To set up a representative, <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/overview.html">authorize a representative</a>. To get access to tax records of someone who died, <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/life-events/doing-taxes-someone-died/represent-deceased.html">represent someone who died</a>.</p>
-				</dd>
-				<dt>Phone</dt>
-				<dd id="contact-phone">If you do not have a CRA online account, <a href="#">contact us</a> to check for uncashed cheques or missing payments <mark>could do an ajax here? or anchor to number on contact page?</mark></dd>
-			</dl>
+				</li>
+				<li id="contact-phone" class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">Phone</h3>
+					<p>If you do not have a CRA online account, <a href="#">contact us</a> to check for uncashed cheques or missing payments <mark>could do an ajax here? or anchor to number on contact page?</mark></p>
+				</li>
+			</ul>
 		</li>
 		<li>
 			<h3>Get Form 535 pre-filled with the cheque number</h3>
 			<p>To request a replacement for an uncashed cheque you do not have, you must get Form 535, Undertaking and Indemnity pre-filled with the cheque number and date payable for your claim.</p>
-			<dl class="dl-horizontal brdr-0">
-				<dt>My Account and Represent a Client</dt>
-				<dd>In <a href="#my-account-cheques">"Uncashed Cheques" section</a>, you can download and print Form 535, for each listed uncashed cheque.</dd>
-				<dt>Phone</dt>
-				<dd>Once the agent has <a href="#contact-phone">confirmed you have uncashed cheques on file</a>, they will send you a pre-filled Form 535 for each cheque.</p>
-			</dl>
+			<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm">
+				<li class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">My Account and Represent a Client</h3>
+					<p>In <a href="#my-account-cheques">"Uncashed Cheques" section</a>, you can download and print Form 535, for each listed uncashed cheque.</p>
+				</li>
+				<li class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">Phone</h3>
+					<p>Once the agent has <a href="#contact-phone">confirmed you have uncashed cheques on file</a>, they will send you a pre-filled Form 535 for each cheque.</p>
+				</li>
+			</ul>
 		</li>
 		<li>
 			<h3>Complete Form 535</h3>
@@ -344,38 +360,42 @@ Missed payments or uncashed cheques from CRA</h1>
 		<li>
 			<h3>Send us Form 535</h3>
 			<p>To avoid delays in processing, send only <strong>one form</strong> for each uncashed cheque:</p>
-			<dl class="dl-horizontal brdr-0">
-				<dt>My Account and Represent a Client</dt>
-				<dd>Submit the completed form(s) through "Submit Documents"</dd>
-				<dt>Phone</dt>
-				<dd>Mail the completed form to:
-					<details>
-						<summary>Mailing address</summary>
+			<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm">
+				<li class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">My Account and Represent a Client</h3>
+					<p>Submit the completed form(s) through "Submit Documents"</p>
+				</li>
+				<li id="my-account-cheques" class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">Phone</h3>
+					<p>Mail the completed form to:</p>
+					<div class="well">
 						<p>Sudbury tax centre<br>
 						Post Office Box&nbsp;20000, Station&nbsp;A<br>
 						Sudbury ON P3A&nbsp;5C2</p>
-					</details>
-				</dd>
-			</dl>
+					</div>
+				</li>
+			</ul>
 		</li>
 		<li>
 			<h3>Receive your payment</h3>
 			<div class="clearfix"></div>
-			<dl class="dl-horizontal brdr-0">
-				<dt>Apply against existing debt</dt>
-				<dd>If you owe an amount to the CRA, part or all of your payment may be applied to your debt. Any remaining amount will be issued to you as a new payment.</dd>
-				<dt>Direct deposit</dt>
-				<dd>
+			<ul class="list-unstyled cnjnctn-type-or cnjnctn-sm">
+				<li class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">Direct deposit</h3>
 					<p>The fastest way to receive your payment is by direct deposit.</p>
 					<p>If you are registered for direct deposit, your payment will be deposited directly into your account</p>
 					<p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Sign up for direct deposit</a></p>
-				</dd>
-				<dt>Mail</dt>
-				<dd>
+				</li>
+				<li class="cnjnctn-col">
+					<h3 class="h4 mrgn-tp-sm text-muted">Mail</h3>
 					<p>If you are not registered for direct deposit, a new cheque will be mailed to the address we have on file.</p>
 					<p><a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/change-your-address.html">Make sure your mailing address is up-to-date</a>.</p>
-				</dd>
-			</dl>
+				</li>
+			</ul>
+			<details>
+				<summary>Existing debts with the CRA may be paid first</h3>
+				<p>If you owe an amount to the CRA, part or all of your payment may be applied to your debt. Any remaining amount will be issued to you as a new payment.</p>
+			</details>
 			<p>Find out how long it should take us to process a request for a duplicate payment: <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/check-cra-processing-times.html">check CRA processing times</a>.</p>
 		</li>
 	</ol>
