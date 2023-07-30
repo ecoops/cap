@@ -119,10 +119,7 @@
 }'></div>
   
 	      
-   <div id="pymntsintro">
-    <p>Choose a few options to find what payments methods you can make to the CRA.</p>
-    <p>Once you make a selection, scroll down (<span class="fas fa-arrow-down"></span>) for further options or answers.</p>
-  </div>
+  
 <ul class="cnjnctn-type-or cnjnctn-sm">
 		<li class="cnjnctn-col">
 			<a href="#pymntsfrm">Types of payment</a>
@@ -139,6 +136,11 @@
 	<div class="tabpanels">
 		<details id="details-panel1">
 			<summary>Types of payments</summary>
+ <div id="pymntsintro">
+    <p>Choose a few options to find what payments methods you can make to the CRA.</p>
+    <p>Once you make a selection, scroll down (<span class="fas fa-arrow-down"></span>) for further options or answers.</p>
+  </div>
+			
 		 <form id="pymntsfrm" class="checkbox-lg gc-font-2019 hidden">
     <p id="pymnt-choose" class="wb-inv">Choose your account type</p>
     <div class="wb-fieldflow"  data-wb-fieldflow='{"unhideelm": "#pymntsfrm", "noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#payment-opts, #hdrs>li, .payment-alert, .remit-note, .duedate-note", "class": "hidden"}, { "action": "removeClass", "source":".pymnt-type, .pymnt-prnt, #online-top", "class": "hidden"}]}'>
@@ -622,7 +624,7 @@
     </section>
   </div>
 		</details>
-		<details id="details-panel2" open="open">
+		<details id="details-panel2">
 			<summary>Payment options</summary>
 		  <div id="pymt-options">
       <hr class="brdr-bttm mrgn-tp-xl">
