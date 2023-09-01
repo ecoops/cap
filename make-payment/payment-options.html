@@ -57,8 +57,15 @@
    </script>
 <main role="main" property="mainContentOfPage" class="container experimental">
 <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>All payment options</span>: <span>Sending a payment to the CRA</span></span></h1>
-<p><strong>Unsure which way to make a payment</strong>If you wish to get information for specific types of payment revenue, go to <a href="payment-types">make a payment</a> for the types of payments you can make.</p>
-<p>You must read &quot;How to pay&quot; for the option you choose to get a better understanding on paying by that method.</p>
+<div class="panel panel-default max-content">
+	<header class="panel-heading">
+		<h2 class="panel-title">Payment method finder</h2>
+		</header>
+	<div class="panel-body">
+		<p>To answer a few questions and determine how you can pay, refer to <a href="payment-types">make a payment</a>.</p>
+	</div>
+</div>
+<!--p>You must read &quot;How to pay&quot; for the option you choose to get a better understanding on paying by that method.</p-->
 <section id="filteredEventsList" class="wb-tagfilter provisional">
 <div class="row mrgn-bttm-xl">
 <div class="col-md-3">
@@ -66,7 +73,7 @@
     <summary>Filter options</summary>
 	
     <fieldset class="gc-chckbxrdio mrgn-tp-md">
-      <legend class="h5 mrgn-tp-0"><span class="field-name">Location for payment</span></legend>
+      <legend class="h5 mrgn-tp-0"><span class="field-name">Ways to pay</span></legend>
       <ul class="list-unstyled">
         <li class="radio">
           <input type="radio" name="method" class="wb-tagfilter-ctrl" value="" id="method-all" checked="checked">
@@ -84,10 +91,14 @@
           <input type="radio" name="method" class="wb-tagfilter-ctrl" value="method__bymail" id="method-bymail">
           <label for="method-bymail">By mail </label>
         </li>
+		<li class="radio">
+          <input type="radio" name="method" class="wb-tagfilter-ctrl" value="method__bymail" id="method-bymail">
+          <label for="method-bymail">By phone </label>
+        </li>
       </ul>
     </fieldset>
 		  <hr class="brdr-bttm">
-    <h3>Ways to pay</h3>
+    <!--h3>Ways to pay</h3>
     <select  name="ways" class="form-control full-width wb-tagfilter-ctrl input-lg">
       <option value="">All</option>
       <option value="ways__deposit">Deposit account (bank or credit union)</option>
@@ -99,7 +110,7 @@
       <option value="ways__cash">Cash</option>
 	<option value="ways__offset">Use a refund/credit/benefit</option>	
     </select>
-<hr class="brdr-bttm">
+<hr class="brdr-bttm"-->
     <h3>When you need to pay</h3>
 		  <select  name="ways" class="form-control full-width wb-tagfilter-ctrl input-lg">
       <option value="">Any time</option>
@@ -129,31 +140,49 @@
   </div>
   <div class="wb-tagfilter-items" >
     <section id="bank"  data-wb-tags="method__online method__inperson ways__deposit ways__wire time__next time__1to3days time__1week time__2week time__1month">
-      <h2>Bank or credit union</h2>
       <ul class="list-unstyled events-list">
         <li data-wb-tags="method__inperson ways__deposit time__next time__1to3days time__1week time__2week time__1month">
           <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Pay at branch counter (teller)</h3>
-            <dl class="dl-horizontal">
-              <dt class="small mrgn-bttm-0">Who is this for</dt>
+            <h3 class="mrgn-tp-sm">Pay by e-transfer (online banking)</h3>
+			<ul class="fa-ul">
+				<li ><span class="fa-li fas fa-laptop"></span> Online</li>
+			</ul>
+            <dl class="dl-horizontal mrgn-tp-md">
+              <dt class="small">What can be paid</dt>
               <dd>
-                <ul>
-                  <li>Citizens and residents of Canada</li>
-                  <li>Withholding agents for non-residents</li>
-                </ul>
+				<!--div class="clearfix"></div-->
+				<details class="mrgn-lft-md">
+					<summary>Accepted by e-transfer</summary>
+					<ul class="fa-ul">
+						<li><span class="fa-li text-success"><span class="fas fa-check"></span></span>the other one </li>
+						<li><span class="fa-li text-success"><span class="fas fa-check"></span></span>and another </li>
+					</ul>
+				</details>
+				<details class="mrgn-lft-md">
+					<summary>Not accepted by e-transfer</summary>
+					<ul class="fa-ul">
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Climate Action Incentive (CAI) repayment/overpayment</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Alberta credits repayment/overpayment</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> TFSA amoung owing</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Part XIII withholding tax <mark>is it not accepted? or unlikely to be available to this audience?</mark></li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Corporate income tax instalment payments</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Information Return (RZ), T5, RRSP, TFSA, etc</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Information returns penalty</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Canada Emergency Rent Subsidy (CERS) repayment</li>
+						<li><span class="fa-li text-danger"><span class="fas fa-times"></span></span> Garnishment on behalf of an employee</li>
+					</ul>
+				</details>
               </dd>
-              <dt class="small mrgn-bttm-0">Method to pay</dt>
-              <dd>In person</dd>
-              <dt class="small mrgn-bttm-0">Ways to pay</dt>
-              <dd>deposit account (savings/chequing)</dd>
-              <dt class="small mrgn-bttm-0">Payment types</dt>
+              <dt class="small">How to pay</dt>
               <dd>
-                <details>
-                  <summary>Revenue payments that can be made by this method</summary>
-                  <p>List here</p>
-                </details>
-              </dd>
-              <dt class="small mrgn-bttm-0">Processing time</dt>
+				<p>For details on how to pay, refer to:</p>
+				<ul class="mrgn-bttm-md">
+					<li><a href="#">Online bank transfer</a></li>
+					<li><a href="#">Non-residents wire transfer</a></li>
+					<li><a href="#">3rd party e-transfer</a> <span class="label label-danger">Service fee applies</span></li>
+				</ul>
+			  </dd>
+			  <dt class="small mrgn-bttm-0">Processing time</dt>
               <dd>
                 <p>All times are approximate.</p>
                 <ul class="list-unstyled small">
@@ -161,9 +190,6 @@
                   <li><strong>Posted to account:</strong> Time listed here</li>
                 </ul>
               </dd>
-              <dt class="small mrgn-bttm-0">How to pay</dt>
-              <dd><a href="#">Link to payment information</a></dd>
-              <dd><a href="#">Link to payment information for non-residents using wire transfer</a></dd>
             </dl>
           </div>
         </li>
