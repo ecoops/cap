@@ -127,13 +127,16 @@
     <p class="h5 wb-fltr-info mrgn-tp-0"><span class="h3" data-nbitem></span> results out of <span class="h3" data-total></span> options</p>
     <input type="search" class="hidden" id="customSearchUI">
   </div>
-  <div class="wb-tagfilter-items" >
+  <div class="wb-tagfilter-items">
     <section id="bank"  data-wb-tags="method__online method__inperson ways__deposit ways__wire time__next time__1to3days time__1week time__2week time__1month">
       <h2>Bank or credit union</h2>
       <ul class="list-unstyled events-list">
         <li data-wb-tags="method__inperson ways__deposit time__next time__1to3days time__1week time__2week time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Pay at branch counter (teller)</h3>
+          <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Pay at branch counter (teller)</h3>
+		</header>
+		  <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -165,11 +168,15 @@
               <dd><a href="#">Link to payment information</a></dd>
               <dd><a href="#">Link to payment information for non-residents using wire transfer</a></dd>
             </dl>
+		  </div>
           </div>
         </li>
         <li  data-wb-tags="method__inperson ways__deposit time__1to3days time__1week time__2week time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Pay at branch ABM</h3>
+          <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Pay at branch ABM</h3>
+		</header>
+		  <div class="panel-body">
             <dl class="dl-horizontal mrgn-bttm-lg">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -201,10 +208,14 @@
               <dd><a href="#">Link to payment information</a></dd>
             </dl>
           </div>
+	  </div>
         </li>
         <li  data-wb-tags="method__online ways__deposit time__1to3days time__1week time__2week time__1month time__5daysleast">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Pay through banking website or app</h3>
+            <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Pay through banking website or app</h3>
+		</header>
+		    <div class="panel-body">
             <dl class="dl-horizontal mrgn-lft-md">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -235,11 +246,15 @@
               <dt class="small mrgn-bttm-0">How to pay</dt>
               <dd><a href="#">Link to payment information</a></dd>
             </dl>
+		    </div>
           </div>
         </li>
         <li data-wb-tags="method__online method__inperson  ways__deposit ways__wire time__1week time__2week time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Pay through foreign financial institution</h3>
+             <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Pay through foreign financial institution</h3>
+		</header>
+		     <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>Non-residents</dd>
@@ -271,6 +286,7 @@
               <dd><a href="#">Link to payment information for non-residents using wire transfer</a></dd>
             </dl>
           </div>
+	     </div>
         </li>
       </ul>
     </section>
@@ -278,8 +294,11 @@
       <h2>CRA online applications</h2>
       <ul class="list-unstyled events-list">
         <li data-wb-tags="method__online ways__deposit time__5daysleast">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Pre-authorize a payment or set of payments</h3>
+             <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Pre-authorize a payment or set of payments</h3>
+		</header>
+		     <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -312,10 +331,14 @@
               <dd><a href="#">Link to payment information in My Business Account</a></dd>
             </dl>
           </div>
+	     </div>
         </li>
-        <li data-wb-tags="method__online ways__debit time__1to3days time__1week time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">One-at-a-time payment</h3>
+        <li data-wb-tags="method__online ways__debit time__1to3days time__1week time__2week time__1month">
+             <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">One-at-a-time payment</h3>
+		</header>
+		     <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -349,15 +372,19 @@
               <dd><a href="#">Link to payment information in My Payment</a></dd>
             </dl>
           </div>
+	     </div>
         </li>
       </ul>
     </section>
     <section id="thirdparty" data-wb-tags="method__online method__inperson ways__credit ways__debit ways__transfer time__1to3days time__1week time__2week time__1month">
       <h2>Service providers</h2>
       <ul class="list-unstyled events-list">
-        <li data-wb-tags="method__online method__inperson ways__credit ways__debit ways__transfer time__1to3days time__1week time__2week time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Third party that will remit on your behalf</h3>
+        <li>
+             <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Third party that will remit on your behalf</h3>
+		</header>
+		     <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -397,15 +424,19 @@
               <dd><a href="#">Link to payment information for international credit cards</a></dd>
             </dl>
           </div>
+	     </div>
         </li>
       </ul>
     </section>
-    <section id="mail" data-wb-tags="method__inperson method__bymail ways__cheque time__2week time__1month time__5daysleast">
+    <section id="mail" data-wb-tags="method__inperson method__bymail ways__cheque time__1week time__2week time__1month time__5daysleast">
       <h2>Through the mail</h2>
       <ul class="list-unstyled events-list">
-        <li data-wb-tags="method__inperson method__bymail ways__cheque time__2week time__1month time__5daysleast">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Using a stamped envelope</h3>
+        <li data-wb-tags="method__bymail ways__cheque time__2week time__1month time__5daysleast">
+            <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Using a stamped envelope</h3>
+		</header>
+		    <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -437,10 +468,14 @@
               <dd><a href="#">Link to payment information</a></dd>
             </dl>
           </div>
+	    </div>
         </li>
-        <li data-wb-tags="method__inperson method__bymail ways__cheque time__2week time__1month time__5daysleast">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Courier pick-up or drop-off</h3>
+        <li data-wb-tags="method__inperson method__bymail ways__cheque time__1week time__2week time__1month time__5daysleast">
+           <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Courier pick-up or drop-off</h3>
+		</header>
+		   <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -472,15 +507,19 @@
               <dd><a href="#">Link to payment information</a></dd>
             </dl>
           </div>
+	   </div>
         </li>
       </ul>
     </section>
     <section id="canadapost" data-wb-tags="method__inperson ways__debit ways__cash time__1to3days time__1week time__2week time__1month">
       <h2>Canada post retail locations</h2>
       <ul class="list-unstyled events-list">
-        <li data-wb-tags="method__inperson ways__debit ways__cash time__1to3days time__1week time__2week time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Payment at counter using QR code </h3>
+        <li>
+            <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Payment at counter using QR code </h3>
+		</header>
+		    <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>
@@ -512,15 +551,19 @@
               <dd><a href="#">Link to payment information</a></dd>
             </dl>
           </div>
+	    </div>
         </li>
       </ul>
     </section>
     <section id="benefit" data-wb-tags="method__online ways__offset time__1month">
       <h2>Debt recovery through benefit payment</h2>
       <ul class="list-unstyled events-list">
-        <li data-wb-tags="method__online time__1month">
-          <div class="panel panel-default panel-body">
-            <h3 class="mrgn-tp-sm">Using your future benefit payment to offset a debt</h3>
+        <li>
+            <div class="panel panel-info brdr-rds-0">
+		<header class="panel-heading">  
+            <h3 class="panel-title mrgn-tp-md mrgn-bttm-md">Using your future benefit payment to offset a debt</h3>
+		</header>
+		    <div class="panel-body">
             <dl class="dl-horizontal">
               <dt class="small mrgn-bttm-0">Who is this for</dt>
               <dd>Citizens and residents of Canada</dd>
@@ -543,13 +586,24 @@
               <dd><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/when-you-money-collections-cra/how-payments-applied-offset-debt.html">Where future benefit payments can be applied to offset debt</a></dd>
             </dl>
           </div>
+	    </div>
         </li>
       </ul>
-    </section>
+    </section> 	  
   </div>
   <div class="wb-tagfilter-noresult">
     <div class="alert alert-warning">
       <p>There are no options based on your filter selections.  Please select less filter options.</p>
+	 <p><strong>Note:</strong> The CRA does not accept the following forms of payments:</p>
+            <ul class="fa-ul lst-spcd p-sm-3">
+              <li><span class="fa-li"><span class="fab fa-btc fa-fw"></span></span><strong>Cryptocurrency</strong><br>
+                We do not accept any form of cryptocurrency (e.g. Bitcoin) as payment</li>
+              <li><span class="fa-li"><span class="fas fa-gift fa-fw"></span></span><strong>Gift cards</strong><br>
+                We do not accept any gift cards as a form of payment</li>
+	 <li><span class="fa-li"><span class="fas fa-money-bill-wave fa-fw"></span></span><strong>Cash by mail</strong><br>
+                Cash can only be used at any Canada post retail location</li>	    
+            </ul>
+            <p>Steps on how to <a href="https://www.canada.ca/en/revenue-agency/corporate/security/protect-yourself-against-fraud.html">avoid CRA scams</a></p>    
 		</div>
   </div>
 </div>
