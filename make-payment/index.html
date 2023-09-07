@@ -68,11 +68,11 @@
 		
 		<div class="cnjnctn-type-or cnjnctn-sm mrgn-bttm-xl">
 	<div class="cnjnctn-col">
-		<h5 class="text-muted">Interactive questions<span class="wb-inv">: Option 1 of 2</span></h5>
+		<h2 class="h5 text-muted">Interactive questions<span class="wb-inv">: Option 1 of 2</span></h2>
 		<p>Use <a href="#fieldflow-tab">interactive questions</a> to find which payment options are available for your situation.</p>
 	</div>
 	<div class="cnjnctn-col">
-		<h5 class="text-muted">Filter options<span class="wb-inv">: Option 2 of 2</span></h5>
+		<h2 class="h5 text-muted">Filter options<span class="wb-inv">: Option 2 of 2</span></h2>
 		<p>Use the <a href="#filter-tab">filter option</a> if you want to compare the ways to pay.</p>
 	</div>
 </div>
@@ -94,6 +94,7 @@
 		<details id="fieldflow-tab">
 			<summary>Interactive questions</summary>
 			 <div id="ff-pymntsintro">
+	<h2 class="wb-inv">Interactive questions</h2>			 
         <p>Answer a few questions to find what  payment methods you can make to the CRA for your payment type.</p>
         <p>Once you make a selection, scroll down for further options or answers.</p>
       </div>
@@ -458,15 +459,17 @@
 		<details id="filter-tab">
 			<summary>Filter options</summary>
  <div id="fltr-pymntsintro">
+	 <h2 class="wb-inv">Filter options</h2>
         <p>View the different ways to pay, along with certain filters that can narrow down your search.</p>
       </div>
 			
 			 <section id="filteredEventsList" class="wb-tagfilter provisional">
     <div class="row mrgn-bttm-xl">
       <div class="col-md-3">
-        <details open="open" class="mrgn-tp-lg">
-          <summary>Filter options</summary>
+        <h3 class="mrgn-tp-sm">Filter</h3>
           <div class="form-group">
+		  <div class="row">
+			  <div class="col-xs-12 col-sm-6 col-md-12">
             <label for="ways-pay">Ways to pay</label>
             <select  name="ways" class="form-control full-width wb-tagfilter-ctrl input-lg" id="ways-pay">
               <option value="">All</option>
@@ -479,7 +482,9 @@
               <option value="ways__cash">Cash</option>
               <option value="ways__offset">Refund, benefit or credit (offset)</option>
             </select>
-            <hr class="brdr-bttm mrgn-bttm-md">
+			  </div>
+            <hr class="brdr-bttm mrgn-bttm-md hidden-sm">
+		  <div class="col-xs-12 col-sm-6 col-md-12">
             <label for="when-pay">When you need to pay</label>
             <select  name="when" class="form-control full-width wb-tagfilter-ctrl input-lg" id="when-pay">
               <option value="">Any time</option>
@@ -488,18 +493,25 @@
               <option value="time__2weeks">Within 2 weeks</option>
               <option value="time__over2weeks">More than 2 weeks</option>
             </select>
-            <hr class="brdr-bttm mrgn-bttm-md">
+		  </div>
+            
+	  <div class="col-xs-12 col-sm-6 col-md-12">
+		  <hr class="brdr-bttm mrgn-bttm-md">
             <div class="checkbox gc-chckbxrdio">
               <input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="non-res" value="type__nonres">
               <label for="non-res">Non-residents</label>
             </div>
-            <hr class="brdr-bttm mrgn-bttm-md">
+	  </div>
+            <hr class="brdr-bttm mrgn-bttm-md hidden-sm">
+			  <div class="col-xs-12 col-sm-6 col-md-12">  
             <div class="checkbox gc-chckbxrdio">
               <input id="multi-pay" type="checkbox" class="wb-tagfilter-ctrl" name="multi-pay" value="pay__multi">
               <label for="multi-pay">Multiple payments over time</label>
             </div>
+			  </div>
+		  </div>
           </div>
-        </details>
+   
       </div>
       <div class="col-md-9 wb-tagfilter provisional wb-filter" id="filteredFAQ"  data-wb-filter='{
 		"selector": ".events-list>li",
