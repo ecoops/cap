@@ -464,7 +464,7 @@
       </div>
 			
 			 <section id="filteredEventsList" class="wb-tagfilter provisional">
-    <div class="row mrgn-bttm-xl">
+    <div class="row mrgn-bttm-xl mrgn-lft-md mrgn-rght-md">
       <div class="col-md-3">
         <h3 class="mrgn-tp-sm">Filter</h3>
           <div class="form-group">
@@ -483,8 +483,8 @@
               <option value="ways__offset">Refund, benefit or credit (offset)</option>
             </select>
 			  </div>
-            <hr class="brdr-bttm mrgn-bttm-md hidden-sm">
-		  <div class="col-xs-12 col-sm-6 col-md-12">
+    
+		  <div class="col-xs-12 col-sm-6 col-md-12 mrgn-tp-md">
             <label for="when-pay">When you need to pay</label>
             <select  name="when" class="form-control full-width wb-tagfilter-ctrl input-lg" id="when-pay">
               <option value="">Any time</option>
@@ -494,9 +494,11 @@
               <option value="time__over2weeks">More than 2 weeks</option>
             </select>
 		  </div>
-            
+	<div class="col-xs-12">		  
+              <hr class="brdr-bttm mrgn-bttm-md">
+	</div>
 	  <div class="col-xs-12 col-sm-6 col-md-12">
-		  <hr class="brdr-bttm mrgn-bttm-md">
+		
             <div class="checkbox gc-chckbxrdio">
               <input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="non-res" value="type__nonres">
               <label for="non-res">Non-residents</label>
@@ -519,7 +521,9 @@
 		"uiTemplate": "#searchFilter"
 	}'>
         <div id="searchFilter">
-          <p class="wb-fltr-info mrgn-tp-0">There are <span class="h4" data-nbitem></span> results out of <span class="h4" data-total></span> options</p>
+<div class="panel panel-primary panel-body p-0 max-content"><p class="wb-fltr-info bg-primary mrgn-bttm-0 px-2">There are <span class="h3" data-nbitem></span> results out of <span class="h3" data-total></span> payment options</p></p></div>
+		
+          <p class="wb-fltr-info h4 mrgn-tp-0">
           <input type="search" class="hidden" id="customSearchUI">
         </div>
         <div class="wb-tagfilter-items">
@@ -538,6 +542,7 @@
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> The same it was paid (stamped by the bank employee)<br>
                       these times are approximate and it may take up to 2 business days after the payment is received for it to be posted to your account </li>
                   </ul>
+				<hr class="brdr-bttm">	
                   <h3>Pay outside of Canada</h3>
                   <p>Payments can be made using a <strong>wire transfer</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">Link to payment information</a></p>
@@ -572,7 +577,7 @@
                 </header>
                 <div class="panel-body">
                   <p>Some financial institutions will allow you to set up the CRA as a payee to make a payment, or schedule multiple payments if you need to make a payment arrangement or pay in instalments.</p>
-                  <h3>Pay online through a banking website or app</h3>
+                  <h3>Pay through a banking website or app</h3>
                   <p>Payments are made through a <strong>direct withdrawl from your savings or chequing account</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">Link to payment information</a></p>
                   <ul class="fa-ul mrgn-tp-lg mrgn-bttm-lg" role="presentation">
@@ -600,7 +605,8 @@
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> The same day as the schedule withdrawl (if the payment is scheduled at least 5 business days in advance)<br>
                       these times are approximate and it may take up to 1 business day after the payment is received for it to be posted to your account </li>
                   </ul>
-                  <h3>Set up scheduled payments</h3>
+			<hr class="brdr-bttm">		
+                  <h3>Set up a series scheduled payments</h3>
                   <p>The schedule must be set up no less than 5 business days before the first payment is made through a <strong>direct withdrawl from your chequing account</strong>.</p>
                   <p><strong>How to schedule to pay from your chequing account:</strong> <a href="#">Link to payment information for PAD</a></p>
                   <ul class="fa-ul mrgn-tp-lg mrgn-bttm-lg" role="presentation">
@@ -632,37 +638,29 @@
             <li data-wb-tags="ways__cheque time__2weeks time__over2weeks type__nonres pay__multi">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Stamped mailed envelope</h2>
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Through the mail</h2>
                 </header>
                 <div class="panel-body">
-                  <p>You can send a payment to the CRA through the mail, with or without your paper return, from anywhere around the world.</p>
-                  <h3>Pay through the mail</h3>
+                  <p>You can send a payment to the CRA through the mail, with or without your paper return, from anywhere around the world. You can use registered mail to provide extra security (extra fees will apply) </p>
+                  <h3>Pay using a stamped envelope</h3>
                   <p>Accepted payments are <strong>a cheque</strong> or <strong>a money order</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">Link to payment information</a></p>
                   <ul class="fa-ul mrgn-tp-lg mrgn-bttm-lg" role="presentation">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Mail delivery varies, allow up to one week when mailed within Canada, or two weeks internationally<br>
                       these times are approximate and it may take up to X business days after the payment is received for it to be posted to your account </li>
                   </ul>
-                </div>
-              </div>
-            </li>
-            <li data-wb-tags="ways__cheque time__2weeks time__over2weeks type__nonres pay__multi">
-              <div class="panel panel-info brdr-rds-0">
-                <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Registered mail</h2>
-                </header>
-                <div class="panel-body">
-                  <p>To provide extra security, you can send your payment through registered mail from anywhere in the world to the CRA, with or without a paper return.</p>
-                  <h3>Pay using a registered mail courier</h3>
+		<hr class="brdr-bttm">	
+		 <h3>Pay using a registered mail courier</h3>
                   <p>Accepted payments are <strong>a cheque</strong> or <strong>a money order</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">Link to payment information</a></p>
                   <ul class="fa-ul mrgn-tp-lg mrgn-bttm-lg" role="presentation">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Mail delivery varies, allow up to X business days when mailed within Canada, or X internationally<br>
                       these times are approximate and it may take up to X business days after the payment is received for it to be posted to your account </li>
-                  </ul>
+                  </ul>	
                 </div>
               </div>
             </li>
+          
             <li data-wb-tags="ways__debit ways__cash time__1day time__3days time__2weeks time__over2weeks">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
@@ -687,7 +685,7 @@
                 </header>
                 <div class="panel-body">
                   <p>If you have a balance owing due to a benefit or credit overpayment, you may be able to repay that amount by allowing a future benefit or credit payment to be applied to the balance.</p>
-                  <h3>Offset an overpayment with a future payment</h3>
+                  <h3>Use a future benefit or credit to offset debt</h3>
                   <p>This payment method should <strong>only</strong> be applied to other benefit or credit debts.</p>
                   <p><strong>How to pay:</strong> <a href="#">Link to benefit offset information</a></p>
                   <ul class="fa-ul mrgn-tp-lg mrgn-bttm-lg" role="presentation">
