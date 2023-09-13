@@ -27,41 +27,39 @@
       <div id="def-top"> </div>
       <!-- Write closure template --> 
       <script type="text/javascript">
-         var defTop = document.getElementById("def-top");
-         defTop.outerHTML = wet.builder.top({
-         lngLinks: [{
-         
-         lang: "fr",
-         href: "#",
-         text: "Français"
-         }],
-         breadcrumbs: [{
-         title: "Canada.ca",
-         href: "https://www.canada.ca/en.html"
-         }, {
-         title: "Canada Revenue Agency",
-         href: "https://www.canada.ca/en/revenue-agency.html"
-         } , {
-         title: "Compliance and enforcement",
-         href: "../compliance/index.html"
-         }, {
-         title: "Payments to and from the CRA",
-         href: "../index.html"
-         }, {
-         title: "Make a payment",
-         href: "index.html"
-         }, {
-         title: "Where to pay",
-         href: "where-pay.html"
-         }, {
-         title: "Method to pay",
-         href: "method-pay.html"
-         }
-           ],
-         search: true,
-         siteMenu: true,
-         showPreContent: true
-         });
+        var defTop = document.getElementById("def-top");
+        defTop.outerHTML = wet.builder.top({
+			lngLinks: [{
+				lang: "fr",
+				href: "#",
+				text: "Français"
+			}],
+			breadcrumbs: [{
+				title: "Canada.ca",
+				href: "https://www.canada.ca/en.html"
+			}, {
+				title: "Canada Revenue Agency",
+				href: "https://www.canada.ca/en/revenue-agency.html"
+			} , {
+				title: "Compliance and enforcement",
+				href: "../compliance/index.html"
+			}, {
+				title: "Payments to and from the CRA",
+				href: "../index.html"
+			}, {
+				title: "Make a payment",
+				href: "index.html"
+			}, {
+				title: "Where to pay",
+				href: "where-pay.html"
+			}, {
+				title: "Method to pay",
+				href: "method-pay.html"
+			}],
+			search: true,
+			siteMenu: true,
+			showPreContent: true
+		});
       </script>
       <main role="main" property="mainContentOfPage" class="container experimental">
          <h1 property="name" id="wb-cont" dir="ltr"><span class="stacked" role="text"><span>Pay online with your bank or credit union</span>: <span>Sending a payment to the CRA</span></span></h1>
@@ -292,7 +290,7 @@
          </ul>
          <div class="row">
             <div class="col-md-8">
-               <h3>Contacted by collections</h3>
+               <h3>If you received Form x <mark>aka collections</mark></h3>
                <p>Content goes here + rescue link - might need further content to describe what to do if it's different in collections</p>
                <!--div class="wb-tabs mrgn-tp-lg">
                   <div class="tabpanels">
@@ -327,7 +325,7 @@
                   	<li><strong>Received by CRA:</strong> same day it was paid (stamped by the bank employee)</li>
                   	<li><strong>Shows up in My Account or My Business Account:</strong> up to <strong>2 business days</strong> after the payment is received. <a href="">Confirm if a payment was received</a></li>
                   </ul-->
-               <p>If it still hasn't shown up: <a href="">Resolve a misallocated payment</a></p>
+               <p>If it still hasn't shown up: <a href="">Resolve a payment issue</a></p>
                <!--h3>Misallocated payment</h3>
                   <p>If more than 2 business days have passed since you made your payment and it has not shown up in your account, <a href="">contact us</a>.</p>
                   
