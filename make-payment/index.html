@@ -74,7 +74,7 @@
       </div>
 			
 			 <section id="filteredEventsList" class="wb-tagfilter provisional">
-    <div class="row mrgn-bttm-xl mrgn-rght-sm">
+    <div class="row mrgn-bttm-xl">
       <div class="col-md-3">
         <h3 class="mrgn-tp-sm">Filter</h3>
           <div class="form-group">
@@ -93,34 +93,20 @@
               <option value="ways__offset">Refund, benefit or credit (offset)</option>
             </select>
 			  </div>
-    
-		  <div class="col-xs-12 col-sm-6 col-md-12 mrgn-tp-md">
-            <label for="when-pay">When you need to pay</label>
-            <select  name="when" class="form-control full-width wb-tagfilter-ctrl input-lg" id="when-pay">
-              <option value="">Any time</option>
-              <option value="time__1day">Within 1 business day</option>
-              <option value="time__3days">Within 3 business days</option>
-              <option value="time__2weeks">Within 2 weeks</option>
-              <option value="time__over2weeks">More than 2 weeks</option>
-            </select>
-		  </div>
-	<div class="col-xs-12">		  
-              <hr class="brdr-bttm mrgn-bttm-md">
-	</div>
-	  <div class="col-xs-12 col-sm-6 col-md-12">
-		
-            <div class="checkbox gc-chckbxrdio">
-              <input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="non-res" value="type__nonres">
-              <label for="non-res">Non-residents</label>
-            </div>
-	  </div>
-            <hr class="brdr-bttm mrgn-bttm-md hidden-sm">
-			  <div class="col-xs-12 col-sm-6 col-md-12">  
-            <div class="checkbox gc-chckbxrdio">
-              <input id="multi-pay" type="checkbox" class="wb-tagfilter-ctrl" name="multi-pay" value="pay__multi">
-              <label for="multi-pay">Multiple payments over time</label>
-            </div>
-			  </div>
+    <div class="col-xs-12 col-sm-6 col-md-12">
+	      <hr class="brdr-bttm hidden-sm">
+<ul class="checkbox gc-chckbxrdio list-unstyled">
+              <li><input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="fastest-time" value="time__1day">
+              <label for="non-res">Fastest processing time</label></li>
+	<li><input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="non-res" value="type__nonres">
+              <label for="non-res">Non-residents</label></li>
+	<li> <input id="multi-pay" type="checkbox" class="wb-tagfilter-ctrl" name="multi-pay" value="pay__multi">
+              <label for="multi-pay">Multiple payments over time</label></li>
+            </ul>
+    </div>
+	    
+	
+         
 		  </div>
           </div>
    
@@ -137,26 +123,26 @@
       </div>
         <div class="wb-tagfilter-items">
           <ul class="list-unstyled events-list lst-spcd-2">
-	 <li  data-wb-tags="ways__deposit time__3days time__2weeks time__over2weeks pay__multi">
+	 <li  data-wb-tags="ways__deposit pay__multi">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Bank or credit union online</h2>
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Online banking</h2>
                 </header>
                 <div class="panel-body">
 		 <p>Some financial institutions will allow you to set up the CRA as a payee to make a payment, or schedule multiple payments if you need to make a payment arrangement or pay in instalments.</p>	
                   <p>Payments are made through a <strong>direct withdrawl from your savings or chequing account</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">through a bank or credit union website or app</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg" >
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, <strong>1 to 2 business days</strong></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to 5 business days after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, <strong>1 to 2 business days</strong></li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to 5 business days after the payment is received</li>
                   </ul>
                 </div>
               </div>
             </li>	  
-            <li data-wb-tags="ways__deposit ways__wire time__1day time__3days time__2weeks time__over2weeks type__nonres">
+            <li data-wb-tags="ways__deposit ways__wire time__1day type__nonres">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Bank or credit union at the counter (teller)</h2>
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Counter (teller) service at bank or credit union </h2>
                 </header>
                 <div class="panel-body">
                   <h3 class="mrgn-tp-0">In Canada</h3>
@@ -164,8 +150,8 @@
                   <p>Payments are made through a <strong>direct withdrawl from your savings or chequing account</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">through a bank or credit union at the counter (teller)</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same day</strong> it was paid (stamped by the bank employee)</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, the <strong>same day</strong> it was paid (stamped by the bank employee)</li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to X business days after the payment is received</li>
                   </ul>
 				<hr class="brdr-bttm">	
                   <h3>Outside of Canada</h3>
@@ -173,29 +159,29 @@
                   <p>Payments can be made using a <strong>wire transfer</strong>.</p>
                  <p><strong>How to pay:</strong> <a href="#">through a foreign bank or credit union</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same or next (0 to 1) business days</strong></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong>  It may take up to X business days after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, the <strong>same or next (0 to 1) business days</strong></li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  It may take up to X business days after the payment is received</li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li  data-wb-tags="ways__deposit time__3days time__2weeks time__over2weeks">
+            <li  data-wb-tags="ways__deposit">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Bank or credit union at the ATM</h2>
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">ATM drop off with bank or credit union</h2>
                 </header>
                 <div class="panel-body">
                   <p><strong>Before you go to the ATM:</strong> You may need to have the CRA set up as a payee.</p>
                   <p>Payments are made through a <strong>direct withdrawl from your savings or chequing account</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">at the branch ATM</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, from <strong>1 to 2 business days</strong></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong>  It may take up to 2 business days after the payment is received </li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, from <strong>1 to 2 business days</strong></li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  It may take up to 2 business days after the payment is received </li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li data-wb-tags="ways__deposit ways__debit time__1day time__3days time__2weeks time__over2weeks pay__multi">
+            <li data-wb-tags="ways__deposit ways__debit time__1day pay__multi">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">CRA secure online services</h2>
@@ -204,26 +190,26 @@
                   <h3 class="mrgn-tp-0">Single lump sum payment</h3>
                   <p><strong>How to pay:</strong> <a href="#">by debit card through CRA online services</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same or next (0 to 1) business day</strong></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong>  It may take up to X business days after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, the <strong>same or next (0 to 1) business day</strong></li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  It may take up to X business days after the payment is received</li>
                   </ul>
                   <p><strong>How to pay:</strong> <a href="#">by scheduling a withdrawl (or series of withdrawls) from your chequing account through CRA online services</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same day as the schedule withdrawl</strong> (if the payment is scheduled at least 5 business days in advance).</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to 1 business day after the payment is received for it to be posted to your account</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, the <strong>same day as the schedule withdrawl</strong> (if the payment is scheduled at least 5 business days in advance).</li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to 1 business day after the payment is received for it to be posted to your account</li>
                   </ul>
 			<hr class="brdr-bttm">		
                   <h3>Series of scheduled payments</h3>
                   <p>The schedule must be set up no less than 5 business days before the first payment is made through a <strong>direct withdrawl from your chequing account</strong>.</p>
                  <p><strong>How to pay:</strong> <a href="#">by scheduling a withdrawl (or series of withdrawls) from your chequing account through CRA online services</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same day as the schedule withdrawl</strong> (if the payment is scheduled at least 5 business days in advance)</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong>  It may take up to 1 business day after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, the <strong>same day as the schedule withdrawl</strong> (if the payment is scheduled at least 5 business days in advance)</li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  It may take up to 1 business day after the payment is received</li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li data-wb-tags="ways__credit ways__debit ways__transfer time__3days time__2weeks time__over2weeks type__nonres">
+            <li data-wb-tags="ways__credit ways__debit ways__transfer type__nonres">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Third party service providers</h2>
@@ -236,51 +222,31 @@
                   <p><span class="fas fa-file-invoice-dollar fa-lg mrgn-rght-sm"></span>Service fees will be charged by the provider.</p>
                   <p><strong>How to pay:</strong> <a href="#">through a third party service provider</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Varies based on the service provider</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong>Varies based on the service provider</li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to X business days after the payment is received</li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li data-wb-tags="ways__cheque time__1day time__3days time__2weeks time__over2weeks type__nonres pay__multi">
+            <li data-wb-tags="ways__cheque time__1day type__nonres pay__multi">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
-                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Through the mail</h2>
+                  <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Mail delivery</h2>
                 </header>
                 <div class="panel-body">
-                 
-                  <h3 class="mrgn-tp-0">Stamped envelope</h3>
-		 <p>You can send a payment with or without a paper return, from anywhere around the world. </p>	
+		 <p>You can send a payment with or without a paper return through the mail.</p>	
                   <p>Accepted payments are <strong>a cheque</strong> or <strong>a money order</strong>.</p>
-                  <p><strong>How to pay:</strong> <a href="#">through the mail with a stamped envelope</a></p>
+                  <p><strong>How to pay:</strong> <a href="#">through the mail</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Mail delivery varies, <strong>allow up to one week</strong> when mailed within Canada, or <strong>two weeks</strong> internationally</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received for it to be posted to your account</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically when delivered to CRA, which depends on the mail delivery time</li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to X business days after the payment is received</li>
                   </ul>
-		<hr class="brdr-bttm">	
-		 <h3>Registered mail courier</h3>
-		<p>For extra security, you can send a payment with or without a paper return, through registered mail, from anywhere in the world. </p>
-			  <p><span class="fas fa-file-invoice-dollar fa-lg mrgn-rght-sm"></span>Service fees will be charged by the courrier.</p>
-                  <p>Accepted payments are <strong>a cheque</strong> or <strong>a money order</strong>.</p>
-                  <p><strong>How to pay:</strong> <a href="#">through the mail with a registered courier</a></p>
-                  <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Mail delivery varies based the service fees are paid to be mailed faster</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received</li>
-                  </ul>	
-		<hr class="brdr-bttm">	
-		 <h3>CRA drop box</h3>
-		<p>You can make a payment when you drop off a return or corespondence to a CRA drop box.  No postage is required.</p>
-                  <p>Accepted payments are <strong>a cheque</strong> or <strong>a money order</strong>.</p>
-                  <p><strong>How to pay:</strong> <a href="#">through a CRA drop box</a></p>
-                  <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same or next (0 to 1) business days</strong></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received</li>
-                  </ul>		
+		
                 </div>
               </div>
             </li>
           
-            <li data-wb-tags="ways__debit ways__cash time__1day time__3days time__2weeks time__over2weeks">
+            <li data-wb-tags="ways__debit ways__cash time__1day">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Canada Post retail location</h2>
@@ -290,13 +256,13 @@
                   <p>Accepted payments are <strong>a debit card</strong> or <strong>cash</strong>.</p>
                   <p><strong>How to pay:</strong> <a href="#">at a Canada post retail location</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> Typically, the <strong>same day</strong> it was paid (stamped by the Canada Post employee)</li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received</li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> Typically, the <strong>same day</strong> it was paid (stamped by the Canada Post employee)</li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to X business days after the payment is received</li>
                   </ul>
                 </div>
               </div>
             </li>
-            <li data-wb-tags="ways__offset time__over2weeks">
+            <li data-wb-tags="ways__offset">
               <div class="panel panel-info brdr-rds-0">
                 <header class="panel-heading">
                   <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Offset a benefit overpayment</h2>
@@ -306,8 +272,8 @@
                   <p>This payment method should <strong>only</strong> be applied to other benefit or credit debts.</p>
                   <p><strong>How to pay:</strong> <a href="#">by offsetting a benefit payment</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
-                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Received by CRA:</strong> <strong>*need to confirm how long</strong>, refer to the <a href="https://www.canada.ca/en/services/benefits/calendar.html">benefits payment dates</a></li>
-                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Posted to your CRA account:</strong> It may take up to X business days after the payment is received </li>
+                    <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong><strong>*need to confirm how long</strong>, refer to the <a href="https://www.canada.ca/en/services/benefits/calendar.html">benefits payment dates</a></li>
+                      <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> It may take up to X business days after the payment is received </li>
                   </ul>
                 </div>
               </div>
