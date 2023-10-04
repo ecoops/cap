@@ -79,53 +79,16 @@
 		  <div class="row">
 			  <div class="col-xs-12 col-sm-6 col-md-12">
             <label for="ways-pay">Ways to pay</label>
-			<ul class="list-unstyled">
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="" checked> All
-								</label>
-							</li>
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__deposit"> Direct withdrawal from chequing or savings account
-								</label>
-							</li>
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__cheque"> Cheque
-								</label>
-							</li>
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__debit"> Debit card (Interac Debit, Visa Debit, or Debit Mastercard)
-								</label>
-							</li>
-							
-							
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__credit"> Credit card
-								</label>
-							</li>
-							
-							
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__transfer"> Money transfer platform (PayPal)
-								</label>
-							</li>
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__wire"> Wire transfer
-								</label>
-							</li>
-							<li class="radio">
-								<label>
-									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="ways__cash"> Cash
-								</label>
-							</li>
-						</ul>
-          
+            <select  name="ways" class="form-control full-width wb-tagfilter-ctrl input-lg" id="ways-pay">
+              <option value="">All</option>
+		    <option value="ways__cash">Cash</option>
+		    <option value="ways__cheque">Cheque</option>
+		      <option value="ways__credit">Credit card</option>
+              <option value="ways__deposit">Direct withdrawal from chequing or savings account</option>
+              <option value="ways__debit">Debit card (Interac Debit, Visa Debit, or Debit Mastercard)</option>
+             <option value="ways__transfer">Money transfer platform (PayPal)</option>
+		      <option value="ways__wire">Wire transfer</option>
+            </select>
 			  </div>
     <div class="col-xs-12 col-sm-6 col-md-12">
 	      <hr class="brdr-bttm hidden-sm">
