@@ -22,4 +22,4 @@ $( ".gcweb-menu" ).on( "wb-ready.gcweb-menu", function( event ) {
 $(document).ready(function(){$("a[href*='canada.ca']").attr("href", "https://cra-proto.github.io/cap/404.html");});
 
 //Remove visited link design from 404 pages
-var visited_link_styling = "<style> a[href='https://cra-proto.github.io/cap/404.html']:visited{ color:#284162; } </style>"; $('head').append( visited_link_styling );
+//var visited_link_styling = "<style> a[href='https://cra-proto.github.io/cap/404.html']:visited{ color:#284162; } </style>"; $('head').append( visited_link_styling );
