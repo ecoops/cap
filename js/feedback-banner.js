@@ -12,7 +12,7 @@ $('#wb-srch-sub').attr("disabled", true);
 $( ".gcweb-menu" ).on( "wb-ready.gcweb-menu", function( event ) {
 	$("a[href='https://www.canada.ca/en/services/taxes.html']").attr("href", "https://cra-proto.github.io/cap/taxes.html").addClass("prototype");
 	$("a[href='https://www.canada.ca/en/services/taxes/income-tax.html']").attr("href", "https://cra-proto.github.io/cap/income-tax.html").addClass("prototype");
-    $("a[href='https://www.canada.ca/en/revenue-agency.html']").attr("href", "https://cra-proto.github.io/cap/cra.html").addClass("prototype");
+    $("a[href='./cra.html']").attr("href", "https://cra-proto.github.io/cap/cra.html").addClass("prototype");
 	$(".gcweb-menu a:not(.prototype)").attr("href", "https://cra-proto.github.io/cap/404.html");	
 	$("a[href*='canada.ca']").attr("href", "https://cra-proto.github.io/cap/404.html");
 	$("a[href*='.gc.ca/']").attr("href", "https://cra-proto.github.io/cap/404.html");
