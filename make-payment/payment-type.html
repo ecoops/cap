@@ -68,7 +68,7 @@
             <p>How are you applying the personal income tax payment?</p>
             <ul>
               <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>On the amount due at filing, or balance owing from an assessment</li>
-              <li>As a required instalment payment (advanced payment on a future amount owing)
+              <li>As a required instalment payment (current year taxes)
                 <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                   <p>How do you want to pay your individual instalment payment?</p>
                   <ul>
@@ -85,7 +85,7 @@
             <p>How are you applying the corporate income tax payment?</p>
             <ul>
               <li data-wb-fieldflow='[{"action": "removeClass", "source": "#ff-results, .third-party-alert", "class": "hidden", "live": true}]'>On the amount due at filing, or the balance owing from an assessment</li>
-              <li>As a required instalment payment (advanced payment on a future amount owing)
+              <li>As a required instalment payment (current year taxes)
                 <div class="wb-fieldflow-sub" data-wb-fieldflow='{"noForm": true, "isoptional": true, "renderas": "radio", "gcChckbxrdio":true, "reset": [{ "action": "addClass", "source":"#ff-results, .alert-hide-reset", "class": "hidden"}, { "action": "removeClass", "source":".ff-answers", "class": "hidden"}]}'>
                   <p>How do you want to pay your corporate instalment payment?</p>
                   <ul>
@@ -601,7 +601,7 @@
             </header>
             <div class="panel-body">
               <p><span class="fas fa-file-invoice-dollar fa-lg mrgn-rght-sm"></span>Service fees will be charged by Canada post.</p>
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Typically, the <strong>same day</strong> (when stamped by employee)</p>
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same day</strong> it is paid (stamped by employee)</p>
               <p><a class="stretched-link"  href="canada-post.html">How to pay at a Canada Post retail location</a></p>
         </div>
           </div>
@@ -617,8 +617,8 @@
               <h4 class="panel-title">Counter (teller) service at bank or credit union outside of Canada </h4>
             </header>
             <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Typically, the <strong>same or next (0 to 1) business day</strong></p>
-              <p><strong>How to pay:</strong> <a class="stretched-link" href="wire-transfer.html">Foreign bank or credit union</a></p>
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same or next business day</strong></p>
+              <p><a class="stretched-link" href="wire-transfer.html">How to pay at a foreign bank or credit union</a></p>
             </div>
           </div>
         </div>
@@ -630,15 +630,14 @@
         <div  class="col-xs-11 col-xs-offset-1">
           <div class="panel panel-info brdr-rds-0 mrgn-bttm-lg">
             <header class="panel-heading">
-              <h4 class="panel-title">Third party service provider that will remit on your behalf </h4>
-            </header>
+              <h4 class="panel-title">Third-party service provider that will remit on your behalf 
             <div class="panel-body">
               <div class="alert alert-info alert-hide-reset third-party-alert hidden">
-                <p>Most third party providers will not be able to process this payment.</p>
+                <p>Most third-party providers will not be able to process this payment.</p>
               </div>
               <p><span class="fas fa-file-invoice-dollar fa-lg mrgn-rght-sm"></span>Service fees will be charged by the provider.</p>
               <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> it <strong>varies</strong>, based on the service provider</p>
-              <p><strong>How to pay:</strong> <a class="stretched-link" href="third-party.html">Third-party service provider</a></p>
+              <p><a class="stretched-link" href="third-party.html">How to pay using a third-party service provider</a></p>
             </div>
           </div>
         </div>
@@ -653,8 +652,8 @@
               <h4 class="panel-title">Mail delivery</h4>
             </header>
             <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Typically when delivered to CRA, which depends on the mail delivery time</p>
-              <p><strong>How to pay:</strong> <a class="stretched-link" href="mail.html">By mail</a></p>
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> when delivered to the CRA, which depends on the mail delivery time</p>
+              <p><a class="stretched-link" href="mail.html">How to pay by mail</a></p>
             </div>
           </div>
         </div>
@@ -669,8 +668,8 @@
               <h4 class="panel-title">Canada Post retail location with a generated QR code</h4>
             </header>
             <div class="panel-body">
-              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> Typically, the <strong>same day</strong> (when stamped by employee)</p>
-              <p><strong>How to pay:</strong> <a class="stretched-link" href="canada-post.html">Visit a Canada Post retail location</a></p>
+              <p><span class="far fa-clock mrgn-rght-sm"></span><strong>Considered as paid:</strong> the <strong>same day</strong> it is paid (stamped by employee)</p>
+              <p><a class="stretched-link" href="canada-post.html">How to pay at a Canada Post retail location</a></p>
             </div>
           </div>
         </div>
@@ -702,7 +701,7 @@
         </li>
         <li><span class="fa-li"><span class="fa-stack fa-sm"><span class="fas fa-gift fa-fw"></span><span class="fas fa-ban fa-stack-2x text-danger opct-70"></span></span></span>
           <h3 class="h4 mrgn-tp-md">Gift cards</h3>
-          <p> We do not accept any gift cards in any form of payment</p>
+          <p> We do not accept any gift cards as a form of payment</p>
         </li>
         <li><span class="fa-li"><span class="fa-stack fa-sm"><span class="fas fa-plane fa-fw"></span><span class="fas fa-ban fa-stack-2x text-danger opct-70"></span></span></span>
           <h3 class="h4 mrgn-tp-md">Travellers cheques</h3>
@@ -716,7 +715,7 @@
           <p>Cash can only be used at any Canada post retail location</p>
         </li>
       </ul>
-      <p class="mrgn-tp-lg">Take steps on how to <a href="https://www.canada.ca/en/revenue-agency/corporate/security/protect-yourself-against-fraud.html">avoid CRA scams</a>.</p>
+      <p class="mrgn-tp-lg">Take steps on how to <a href="https://www.canada.ca/en/revenue-agency/corporate/security/protect-yourself-against-fraud.html">avoid scams</a>.</p>
     </div>
   </div>
   
