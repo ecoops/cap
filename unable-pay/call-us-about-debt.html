@@ -723,9 +723,9 @@ html:lang(fr) .cnjnctn-or:before {
              href: "https://www.canada.ca/en.html"
            }, {
              title: "Canada Revenue Agency",
-             href: "../cra.html"
+             href: "https://www.canada.ca/en/revenue-agency.html"
            }, {
-             title: "Payments to the CRA",
+             title: "Payments and the CRA",
              href: "../index.html"
            }
 		   ],
@@ -749,6 +749,9 @@ html:lang(fr) .cnjnctn-or:before {
 			<li>Discuss other ways to reduce or resolve your debt</li>
 		</ul>
 		
+		<h2>Set up a payment arrangement</h2>
+		<p>If you want to set up a payment arrangement yourself online or with an automated phone service, refer to: <a href="../payment-arrangements.html">Arrange to pay your personal debt over time</a>.</p>
+		
 		<h2>Before you call</h2>
 		<p>Make sure you have the following when you call to answer our questions to validate your identity:</p>
 		<ul class="fa-ul">
@@ -760,7 +763,7 @@ html:lang(fr) .cnjnctn-or:before {
 		
 		<h2>Find a phone number</h2>
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-12">
 			<div class="wb-tabs mrgn-tp-lg">
 				<div class="tabpanels">
 					<details id="interactive">
@@ -773,62 +776,62 @@ html:lang(fr) .cnjnctn-or:before {
 						</div>
 						<div class="wb-frmvld gc-font-2019" id="debt-number-wizard">
 							<form>
-								<div class="wb-fieldflow"  data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#answer1, #answer2", "class": "hidden", "live": true}, "unhideelm": "#debt-number-wizard", "hideelm": "#norun"}'>
+								<div class="wb-fieldflow"  data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#personal-tax, #sc-cerb, #cra-cerb, #child-family, #ei, #cpp, #student, #corporate, #gst, #payroll, #cews, #customs", "class": "hidden", "live": true}, "unhideelm": "#debt-number-wizard", "hideelm": "#norun"}'>
 									<div class="wb-fieldflow-header">
 										<!--p class="gc-font-2019">Header</p-->  
 										<p class="wb-fieldflow-label">What kind of debt do you want to call about?</p>
 									</div>
 									<ul>
 										<li>Personal
-											<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#answer1, #answer2", "class": "hidden", "live": true}}'>
+											<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#personal-tax, #sc-cerb, #cra-cerb, #child-family, #ei, #cpp, #student, #corporate, #gst, #payroll, #cews, #customs", "class": "hidden", "live": true}}'>
 												<p>What type of individual debt are you calling about?</p>
 												<ul>
-													<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer1", "class": "hidden", "live": true}'>Tax</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#personal-tax", "class": "hidden", "live": true}'>Tax</li>
 													<li>COVID-19 benefit (e.g. CERB)
-														<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#answer1, #answer2", "class": "hidden", "live": true}}'>
+														<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#personal-tax, #sc-cerb, #cra-cerb, #child-family, #ei, #cpp, #student, #corporate, #gst, #payroll, #cews, #customs", "class": "hidden", "live": true}}'>
 															<p>Who did you receive the COVID-19 benefit from?</p>
 															<ul>
-																<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>ESDC or Service Canada</li>
-																<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>Canada Revenue Agency</li>
-																<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>I don't know</li>
+																<li data-wb-fieldflow='{"action": "removeClass", "source": "#sc-cerb", "class": "hidden", "live": true}'>ESDC or Service Canada</li>
+																<li data-wb-fieldflow='{"action": "removeClass", "source": "#cra-cerb", "class": "hidden", "live": true}'>Canada Revenue Agency</li>
 															</ul>
 														</div>
 													</li>
-													<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>Child and family benefits</li>
-													<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>Student or Apprentice Loans</li>
-													<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>EI overpayments</li>
-													<li data-wb-fieldflow='{"action": "removeClass", "source": "#answer2", "class": "hidden", "live": true}'>CPP overpayments</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#child-family", "class": "hidden", "live": true}'>Child and family benefits</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#ei", "class": "hidden", "live": true}'>EI overpayments</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#cpp", "class": "hidden", "live": true}'>CPP overpayments</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#student", "class": "hidden", "live": true}'>Student or Apprentice Loans</li>
 													
 												</ul>
 											</div>
 										</li>
 										<li>Business or charity
-											<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#answer1, #answer2", "class": "hidden", "live": true}}'>
+											<div class="wb-fieldflow-sub" data-wb-fieldflow='{"renderas":"radio", "gcChckbxrdio":true, "noForm": true, "isoptional": true, "default": {"action": "addClass", "source": "#personal-tax, #sc-cerb, #cra-cerb, #child-family, #ei, #cpp, #student, #corporate, #gst, #payroll, #cews, #customs", "class": "hidden", "live": true}}'>
 												<p>What type of business debt are you calling about?</p>
 												<ul>
-													<li>Corporate tax debt</li>
-													<li>GST/HST</li>
-													<li>Payroll</li>
-													<li>COVID-19 subsidies</li>
-													<li>Customs and tariffs</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#corporate", "class": "hidden", "live": true}'>Corporate tax debt</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#gst", "class": "hidden", "live": true}'>GST/HST</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#payroll", "class": "hidden", "live": true}'>Payroll</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#cews", "class": "hidden", "live": true}'>COVID-19 subsidies</li>
+													<li data-wb-fieldflow='{"action": "removeClass", "source": "#customs", "class": "hidden", "live": true}'>Customs and tariffs</li>
 												</ul>
 											</div>
-										
 										</li>
 									</ul>
 								</div>
 							</form>
 						</div>
-						<section id="answer1" class="hidden alert alert-info">
+						<section id="personal-tax" class="hidden alert alert-info">
 							<p class="h3"><small>Based on your choice, your result is:</small><br>
 								Personal income tax debt</p>
-							<div>
-								<!--details open="open"-->
+							<div id="personal-tax-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<!--details open="open"-->
 									<!--p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p-->
-									<p>Within Canada or the U.S.: <a href="tel:18888638657" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-888-863-8657<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-888-863-8657</strong></p>
+									<p class="mrgn-tp-md">Within Canada or the U.S.: <a href="tel:18888638657" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-888-863-8657<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-888-863-8657</strong></p>
 									<p>Outside Canada and U.S.: <a href="tel:6132213002" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3002<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3002</strong></p>
 									
-									<p class="h3">Hours of service for both within and outside of Canada and the US</p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
 									<table class="table">
 									  <caption class="wb-inv">
 									  Hours of service
@@ -851,10 +854,10 @@ html:lang(fr) .cnjnctn-or:before {
 									  </tbody>
 									</table>
 									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
-									<details>
-										<summary>Teletypewriter (TTY)</summary>
-										<p>Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
-										<p class="h3">Hours of service for teletypewriter (TTY)</p>
+									<!--details>
+										<summary>Teletypewriter (TTY)</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
 										<table class="table">
 										  <caption class="wb-inv">
 										  Hours of service for teletypewriter (TTY)
@@ -881,12 +884,756 @@ html:lang(fr) .cnjnctn-or:before {
 										  </tbody>
 										</table>
 										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
-								</details>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13000e&amp;lp=1">request we call you for a personal income tax debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="sc-cerb" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Service Canada issued CERB</p>
+							<div id="sc-cerb-ajax">
+								<!--details open="open"-->
+									<!--p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p-->
+									<p>Within Canada or the U.S.: <a href="tel:18668645823" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:18668645823" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823</strong></p>
+									
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>7 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18668645823" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat and Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
 								
 							</div>
 						</section>
-						<section id="answer2" class="hidden">
-							<p>Great, you made it this far 2!</p>
+						<section id="cra-cerb" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								CRA issued COVID-19 benefits</p>
+							<div id="cra-cerb-ajax">
+								<!--details open="open"-->
+									<!--p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p-->
+									<p>Within Canada or the U.S.: <a href="tel:18332537615" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-833-253-7615<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-833-253-7615</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213002" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3002<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3002</strong></p>
+									
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>7 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								
+							</div>
+						</section>
+						<section id="child-family" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Child and family benefits overpayment</p>
+							<div id="child-family-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18888638662" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-888-863-8662<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-888-863-8662</strong></p>
+									<p class="h5">Hours of service for within Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>7 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Outside Canada and U.S.</summary-->
+										<p class="mrgn-tp-lg">Outside Canada and U.S.: <a href="tel:6132213004" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004</strong></p>
+										<p class="h5">Hours of service for Outside Canada and U.S.</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for Outside Canada and U.S.
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (ET)</td>
+											</tr>
+											<tr>
+											  <td>Sat and Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--/details-->
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13004e&lp=2">request we call you for a personal income tax debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="cpp" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Canada Pension Plan (CPP)</p>
+							<div id="cpp-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18668645823" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5823</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213004" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>8 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13004e&lp=2">request we call you for a personal income tax debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="ei" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Employment Insurance (EI)</p>
+							<div id="cpp-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18668645841" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5841<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5841</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213004" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>8 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13004e&lp=2">request we call you for a personal income tax debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="student" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Canada Student Loan or Canada Apprentice Loan</p>
+							<div id="student-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18668645825" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5825<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-864-5825</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213004" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3004</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>8 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13004e&lp=2">request we call you for a personal income tax debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="corporate" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Corporate Income Tax</p>
+							<div id="corporate-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18662916346" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-291-6346<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-291-6346</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213003" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3003<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3003</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>7 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13001e&lp=5">request we call you for a corporate tax debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="gst" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								GST/HST</p>
+							<div id="gst-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18774775068" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-877-477-5068<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-877-477-5068</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213003" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3003<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3003</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>7 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+								
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13002e&lp=3">request we call you for a GST/HST debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="payroll" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Payroll</p>
+							<div id="payroll-ajax">	
+								<ul class="cnjnctn-type-or cnjnctn-sm">
+									<li class="cnjnctn-col-70">
+									<p>Within Canada or the U.S.: <a href="tel:18775486016" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-877-548-6016<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-877-548-6016</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213003" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3003<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3003</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>7 am to 8 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006650354" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-665-0354</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 8 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat</td>
+											  <td>9 am to 5 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+								</li>
+								<li class="cnjnctn-col-30">
+									<h4>Request a call when a CRA agent is available</h4>
+									<p>If there's a long wait time, you can <a href="https://apps.cra-arc.gc.ca/ebci/iesl/clicktotalk/ntr.action?RefNumber=13003e&lp=4">request we call you for a payroll debt</a> when an agent is available. This is only available within Canada and the United States.</p>
+								</li>
+								</ul>
+							</div>
+						</section>
+						<section id="cews" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								COVID-19 subsidies</p>
+							<div id="cews-ajax">
+								<!--details open="open"-->
+									<!--p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p-->
+									<p>Within Canada or the U.S.: <a href="tel:18336152087" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-833-615-2087<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-833-615-2087</strong></p>
+									<p>Outside Canada and U.S.: <a href="tel:6132213152" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3152<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;613-221-3152</strong></p>
+									<p class="h5">Hours of service for both within and outside of Canada and the US</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>8 am to 6 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+									<!--details>
+										<summary>Teletypewriter TTY</summary-->
+										<p class="mrgn-tp-lg">Teletypewriter (TTY): <a href="tel:18006152088" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-615-2088<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-800-615-2088</strong></p>
+										<p class="h5">Hours of service for teletypewriter (TTY)</p>
+										<table class="table">
+										  <caption class="wb-inv">
+										  Hours of service for teletypewriter (TTY)
+										  </caption>
+										  <thead>
+											<tr>
+											  <th scope="col" class="wb-inv">Day</th>
+											  <th scope="col" class="wb-inv">Hours</th>
+											</tr>
+										  </thead>
+										  <tbody>
+											<tr>
+											  <td>Mon to Fri</td>
+											  <td>8 am to 6 pm (local time)</td>
+											</tr>
+											<tr>
+											  <td>Sat and Sun</td>
+											  <td>Closed</td>
+											</tr>
+										  </tbody>
+										</table>
+										<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+								<!--/details-->
+							</div>
+						</section>
+						<section id="customs" class="hidden alert alert-info">
+							<p class="h3"><small>Based on your choice, your result is:</small><br>
+								Customs duty</p>
+							<div id="customs-ajax">
+									<p>For postal code starting with A, B, C, E, G, H, J, R, S, T: <a href="tel:18662290824" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-229-0824<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-229-0824</strong></p>
+									<p>For postal code starting with K, L, M, N, P, X, V, Y: <a href="tel:18664841217" class="hidden-md hidden-lg nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-484-1217<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><!--span class="fas fa-phone fa-flip-horizontal"></span-->&nbsp;1-866-484-1217</strong></p>
+									<p class="h5">Hours of service</p>
+									<table class="table">
+									  <caption class="wb-inv">
+									  Hours of service
+									  </caption>
+									  <thead>
+										<tr>
+										  <th scope="col" class="wb-inv">Day</th>
+										  <th scope="col" class="wb-inv">Hours</th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Mon to Fri</td>
+										  <td>8 am to 4:30 pm (ET)</td>
+										</tr>
+										<tr>
+										  <td>Sat and Sun</td>
+										  <td>Closed</td>
+										</tr>
+									  </tbody>
+									</table>
+									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p>
+							</div>
 						</section>
 						
 					</details>
@@ -896,39 +1643,22 @@ html:lang(fr) .cnjnctn-or:before {
 						<dl class="dl-horizontal">
 							<dt>Personal income tax debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<p>Telephone number: <a href="tel:18888638657" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-888-863-8657<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-888-863-8657</strong></p>
-									<details><summary>Hours</summary>
-									<p>Monday to Friday<br>
-									7 am to 8 pm (ET)</p>
-									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="personal-tax-ajax"></div>
 								
 							</dd>
 							<dt>Service Canada issued CERB debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<p>Telephone number: <a href="tel:18668645823" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-866-864-5823<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-866-864-5823</strong></p>
-									<details><summary>Hours</summary>
-									<p>Monday to Friday<br>
-									7 am to 8 pm (ET)</p>
-									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
+								<div data-ajax-replace="sc-cerb-ajax"></div>
+								<!--
+								<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
+								<p>Telephone number: <a href="tel:18668645823" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-866-864-5823<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-866-864-5823</strong></p>
+								<details><summary>Hours</summary>
+								<p>Monday to Friday<br>
+								7 am to 8 pm (ET)</p>
+								<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
+								<details>
+									<summary>Teletypewriter (TTY) and alternate formats</summary>
+								</details>
 								<details>
 									<summary>Call from outside Canada and the United States</summary>
 									
@@ -936,91 +1666,27 @@ html:lang(fr) .cnjnctn-or:before {
 										<summary>Teletypewriter (TTY) and alternate formats</summary>
 									</details>
 								</details>
+								-->
 							</dd>
 							<dt>CRA issued CERB or other COVID-19 benefits for individuals debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<p>Telephone number: <a href="tel:18332537615" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-833-253-7615<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-833-253-7615</strong></p>
-									<details><summary>Hours</summary>
-									<p>Monday to Friday<br>
-									7 am to 8 pm (ET)</p>
-									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="cra-cerb-ajax"></div>
 							</dd>
 							<dt>CPP overpayments</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="cpp-ajax"></div>
 							</dd>
 							<dt>EI overpayments</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="ei-ajax"></div>
 							</dd>
 							<dt>Child and family benefit overpayments</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="child-family-ajax"></div>
 							</dd>
 							<dt>Canada Student Loans and Canada Apprentice Loans</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="student-ajax"></div>
 							</dd>
 						</dl>
 						
@@ -1028,99 +1694,23 @@ html:lang(fr) .cnjnctn-or:before {
 						<dl class="dl-horizontal">
 							<dt>Corporate tax debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<p>Telephone number: <a href="tel:18662916346" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-866-291-6346<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-866-291-6346</strong></p>
-									<details><summary>Hours</summary>
-									<p>Monday to Friday<br>
-									7 am to 8 pm (ET)</p>
-									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="corporate-ajax"></div>
 							</dd>
 							<dt>GST/HST debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<p>Telephone number: <a href="tel:18774775068" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-877-477-5068<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-877-477-5068</strong></p>
-									<details><summary>Hours</summary>
-									<p>Monday to Friday<br>
-									7 am to 8 pm (ET)</p>
-									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="gst-ajax"></div>
 							</dd>
 							<dt>Payroll debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<p>Telephone number: <a href="tel:18775486016" class="hidden-md hidden-lg nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-877-548-6016<span class="wb-inv"> (opens up phone application)</span></a><strong class="hidden-xs hidden-sm nowrap"><span class="fas fa-phone fa-flip-horizontal"></span>&nbsp;1-877-548-6016</strong></p>
-									<details><summary>Hours</summary>
-									<p>Monday to Friday<br>
-									7 am to 8 pm (ET)</p>
-									<p>Closed on <a href="https://www.canada.ca/en/revenue-agency/services/tax/public-holidays.html">public holidays</a></p></details>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="payroll-ajax"></div>
 							</dd>
 							<dt>Business COVID-19 support payments</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="cews-ajax"></div>
 							</dd>
 							<dt>Customs and tariffs tax debt</dt>
 							<dd>
-								<!--details open="open"-->
-									<p class="h4 mrgn-tp-sm">Call from within Canada or the United States</p>
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								<!--/details-->
-								<details>
-									<summary>Call from outside Canada and the United States</summary>
-									
-									<details>
-										<summary>Teletypewriter (TTY) and alternate formats</summary>
-									</details>
-								</details>
+								<div data-ajax-replace="customs-ajax"></div>
 							</dd>
 						</dl>
 						
@@ -1207,14 +1797,13 @@ html:lang(fr) .cnjnctn-or:before {
 			</dd>
 		</dl-->
 
-  <p>Alternatively, if you want to set up a payment arrangement yourself online or with an automated phone service, refer to: <a href="../payment-arrangements.html">Arrange to pay your personal debt over time</a></p>
-
+  
 
         
 <div class="owner">
                <p>From:</p>
                <ul class="list-inline">
-                  <li><a href="./cra.html">Canada Revenue Agency</a></li>
+                  <li><a href="https://www.canada.ca/en/revenue-agency.html">Canada Revenue Agency</a></li>
                </ul>
             </div>
          <div class="profile">
@@ -1255,6 +1844,5 @@ html:lang(fr) .cnjnctn-or:before {
          document.write(wet.builder.refFooter({
          }));
       </script>
-	  <script src="https://cra-proto.github.io/cap/js/feedback-banner.js"></script>
    </body>
 </html>
