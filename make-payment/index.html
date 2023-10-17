@@ -61,10 +61,14 @@
       <p>The CRA accepts many payment methods. Find out which way to pay works best for you.</p>
 	</div>
 	<div class="col-sm-6 col-md-7">
-	<div class="panel panel-default panel-body brdr-rds-0">
-<h2 class="h3 mrgn-tp-0">Options for your situation</h2>
+	<div class="panel panel-default brdr-rds-0">
+		<header class="panel-heading">
+<h2 class="panel-title">Options for your situation</h2>
+		</header>
+		<div class="panel-body">
 <p>Some payments can only be made using certain methods. To see what options are available for the specific payment you are making, answer a few questions to <a href="https://cra-proto.github.io/cap/make-payment/payment-type.html">identify the best payment method for your situation</a>.</p>		
-	</div>
+		</div>
+		</div>
 	</div>
 </div>
 	
@@ -75,12 +79,14 @@
     <div class="row mrgn-bttm-xl">
       <div class="col-md-4">
 	  <details class=" provisional wb-details-close mrgn-bttm-lg" open>
-        <summary><h3 class="h5"><span class="fas fa-filter"></span> Filters</h3></summary>
+        <summary><h3 class="h5"><span class="fas fa-filter"></span> Filter by payment options</h3></summary>
           <div class="form-group">
 		  <div class="row">
 			  <div class="col-xs-12 col-sm-6 col-md-12">
-            <label for="ways-pay">Ways to pay</label>
-			<ul class="list-unstyled">
+        
+				<fieldset>
+					<legend class="h5 mrgn-tp-sm">Ways to pay</legend>
+			<ul class="list-unstyled gc-font-2019">
 							<li class="radio">
 								<label>
 									<input type="radio" name="ways" class="wb-tagfilter-ctrl" value="" checked> All
@@ -126,18 +132,20 @@
 								</label>
 							</li>
 						</ul>
-          
+					</fieldset>
 			  </div>
     <div class="col-xs-12 col-sm-6 col-md-12">
 	      <hr class="brdr-bttm hidden-sm">
+	    <fieldset class="gc-chckbxrdio"><legend class="h5">Other situations</legend>
 <ul class="list-unstyled lst-spcd">
               <li class="checkbox gc-chckbxrdio"><input id="fastest-time" type="checkbox" class="wb-tagfilter-ctrl"  name="fastest-time" value="time__1day">
-              <label for="fastest-time">Fastest processing time</label></li>
+              <label for="fastest-time">Received within 2 business days</label></li>
 	<li class="checkbox gc-chckbxrdio"><input id="non-res" type="checkbox" class="wb-tagfilter-ctrl"  name="non-res" value="type__nonres">
-              <label for="non-res">Non-residents</label></li>
+              <label for="non-res">International payments</label></li>
 	<li class="checkbox gc-chckbxrdio"> <input id="multi-pay" type="checkbox" class="wb-tagfilter-ctrl" name="multi-pay" value="pay__multi">
               <label for="multi-pay">Multiple or future-dated payments</label></li>
             </ul>
+	    </fieldset>
     </div>
 	    
 	
@@ -167,9 +175,17 @@
                 <div class="panel-body">
 		 <p>Some financial institutions allow you to add the CRA as a payee to make a single or multiple scheduled payments.</p>	
                   <p>Payments are made through a <strong>direct withdrawal from your savings or chequing account</strong>.</p>
-				  <div class="mrgn-bttm-lg" data-ajax-replace="online-banking.html#ajax-can-cant"></div>
+				  <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="online-banking.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="online-banking.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>		  
+				  </details>
 		
-                  <p ><a href="online-banking.html">How to pay using your bank or credit union website or app</a></p>
+                  <p><span class="h4">Learn how to pay:</span> <a href="online-banking.html">Using your bank or credit union website or app</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg" >
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same or next business day</strong> (varies based on your bank or credit union)</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> up to 2 business days after the payment is received</li>
@@ -183,21 +199,41 @@
                   <h2 class="panel-title mrgn-tp-sm mrgn-bttm-sm">Counter (teller) service at bank or credit union </h2>
                 </header>
                 <div class="panel-body">
+			<div data-wb-tags="ways__deposit ways__wire time__1day">
                   <h3 class="mrgn-tp-0">In Canada</h3>
 		  <p>You can make a payment to the CRA at any financial institution in Canada.</p>	
                   <p>Payments are made through a <strong>direct withdrawal from your savings or chequing account</strong>.</p>
-                  <div class="mrgn-bttm-lg" data-ajax-replace="teller.html#ajax-can-cant"></div>
-			<p ><a href="teller.html">How to pay at the counter (teller) of a bank or credit union</a></p>
+                   <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="teller.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="teller.html#ajax-cant"></div>
+			<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>		  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="teller.html">At the counter (teller) of a bank or credit union</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same day</strong> it was paid (stamped by employee)</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> up to 10 business days after the payment is received</li>
                   </ul>
-				<hr class="brdr-bttm">	
+				<hr class="brdr-bttm">
+		  </div>
                   <h3>Outside of Canada</h3>
 		<p>Non-resident financial institutions may be able to <strong>wire transfer</strong> a payment to the CRA.</p>	
                   <!--<p>Payments can be sent using a <strong>wire transfer</strong>.</p>-->
-                  <div class="mrgn-bttm-lg" data-ajax-replace="wire-transfer.html#ajax-can-cant"></div>
-			<p ><a href="wire-transfer.html">How to pay at a foreign bank or credit union</a></p>
+                 <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="wire-transfer.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="wire-transfer.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>	  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="wire-transfer.html">At a foreign bank or credit union</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same or next business day</strong></li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  usually 3 business days after the payment is received</li>
@@ -213,8 +249,17 @@
                 <div class="panel-body">
                   <p><strong>Before you go to the ATM you may need to set the CRA up as a payee.</strong></p>
                   <p>Payments are made through a <strong>direct withdrawal from your savings or chequing account</strong>.</p>
-		<div class="mrgn-bttm-lg" data-ajax-replace="atm.html#ajax-can-cant"></div>
-                  <p ><a href="atm.html">How to pay at your bank or credit union's ATM</a></p>
+		  <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="atm.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="atm.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>	  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="atm.html">At your bank or credit union's ATM</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> within <strong>1 to 2 business days</strong></li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  up to 3 business days after the payment is received </li>
@@ -230,8 +275,17 @@
                 <div class="panel-body">
                   <h3 class="mrgn-tp-0">One-time payments that are not future dated</h3>
 			<p>Use your <strong>debit card</strong> to pay using CRA's My Payment service.</p>
-                  <div class="mrgn-bttm-lg" data-ajax-replace="debit-cra.html#ajax-can-cant"></div>
-			<p ><a href="debit-cra.html">How to pay using My Payment</a></p>
+                   <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="debit-cra.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="debit-cra.html#ajax-cant"></div>
+			<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>		  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="debit-cra.html">Using My Payment</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> usually the <strong>same or next business day</strong> (varies based on your bank or credit union)</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong>  up to 3 business days after the payment is received</li>
@@ -245,8 +299,17 @@
                   <h3>Multiple or future-dated payments</h3>
                   <p>Scheduled payments must be set up <strong>at least 5 business days before</strong> the first payment is made.</p>
                  <p>Set up <strong>pre-authorized debit (PAD)</strong> payments, scheduled direct withdrawals from your bank account, in CRA <strong>My Account</strong>, <strong>My Business Account</strong> or <strong>Represent a Client</strong>.</p>
-			<div class="mrgn-bttm-lg" data-ajax-replace="scheduled-withdrawal.html#ajax-can-cant"></div>
-			<p ><a href="scheduled-withdrawal.html">How to pay with pre-authorized debit (scheduled withdrawals)</a></p>
+			  <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="scheduled-withdrawl.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="scheduled-withdrawl.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>	  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="scheduled-withdrawl.html">With pre-authorized debit (scheduled withdrawals)</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same day as the scheduled withdrawal</strong>, as long as the payment is scheduled at least 5 business days in advance</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> up to 2 business days after the payment is received</li>
@@ -262,8 +325,17 @@
                 <div class="panel-body">  
                   <p>PaySimply, a third-party service, will accept a <strong>debit card, credit card, or online transfer (e.g. PayPal)</strong> and send it to CRA on your behalf.</p>
                   <p><span class="fas fa-dollar-sign fa-lg mrgn-rght-sm p-sm-3"></span>Service fees will be charged by the provider</p>
-                <div class="mrgn-bttm-lg" data-ajax-replace="third-party.html#ajax-can-cant"></div>
-			<p ><a href="third-party.html">How to pay using a third-party service provider</a></p>
+                <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="third-party.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="third-party.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>	  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="third-party.html">Using a third-party service provider</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> <strong>varies</strong> based on the service provider</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> up to 10 business days after the payment is received</li>
@@ -278,8 +350,17 @@
                 </header>
                 <div class="panel-body">
 		 <p>You can send a <strong>cheque or a series of postdated cheques</strong> with or without a paper return through the mail.</p>
-                 <div class="mrgn-bttm-lg" data-ajax-replace="mail.html#ajax-can-cant"></div>
-			<p ><a href="mail.html">How to pay by mail</a></p>
+                <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="mail.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="mail.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>	  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="mail.html">By mail</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> when delivered to the CRA, which depends on the mail delivery time</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> up to 10 business days after the payment is received</li>
@@ -298,8 +379,17 @@
                   <p>Before you pay at Canada Post you must have a <strong>customized QR code</strong> to apply the payment correctly.</p>
 		<p><span class="fas fa-dollar-sign fa-lg mrgn-rght-sm p-sm-3"></span>Service fees will be charged</p>	
                   <p>You can pay with <strong>a debit card</strong> or <strong>cash</strong>.</p>
-                 <div class="mrgn-bttm-lg" data-ajax-replace="canada-post.html#ajax-can-cant"></div>
-			<p ><a href="canada-post.html">How to pay at a Canada Post retail location</a></p>
+                  <details class="mrgn-bttm-lg"><summary>Payments we <strong>do</strong> and <strong>do not</strong> accept online through your bank or credit union</summary>
+					  <p>Payments we accept:</p>
+					  
+					  <div data-ajax-replace="canada-post.html#ajax-can"></div>
+ <p>Payments we do not accept:</p>
+					  
+					  <div data-ajax-replace="canada-post.html#ajax-cant"></div>
+				<p class="mrgn-tp-lg">Didn’t see your payment on the list? You can also <a href="payment-types.html">identify the best payment method for your situation</a>.</p>	  
+				  </details>
+		
+                  <p><span class="h4">Learn how to pay:</span> <a href="canada-post.html">At a Canada Post retail location</a></p>
                   <ul class="fa-ul lst-spcd mrgn-tp-lg mrgn-bttm-lg">
                     <li><span class="fa-li fa-lg"><span class="far fa-clock fa-fw"></span></span> <strong>Considered as paid:</strong> the <strong>same day</strong> it was paid (stamped by employee)</li>
                       <li><span class="fa-li fa-lg"><span class="fas fa-cogs fa-fw"></span></span> <strong>Updated in your CRA account:</strong> up to 2 business days after the payment is received</li>
