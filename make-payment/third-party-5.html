@@ -23,7 +23,7 @@
       <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css"/>
       <link href="css/custom.css" rel="stylesheet">
    </head>
-   <body vocab="http://schema.org/" typeof="WebPage"  class="">
+   <body vocab="http://schema.org/" typeof="WebPage"  class "cnt-wdth-lmtd">
       <div id="def-top"> </div>
       <!-- Write closure template --> 
       <script type="text/javascript">
@@ -76,6 +76,7 @@
 
                <h2 id="restrictions">What you can pay</h2>
 
+		    <span id="ajax-can">
               <table class="table">
 <caption class="wb-inv">Types of payments you can make at different third-party providers</caption>
                 <thead><tr><th span="col">Provider</th><th span="col">Types of payments accepted</th></tr></thead>
@@ -89,9 +90,9 @@
                   </tr>
                   <tr>
                     <td>Canada Post</td>
-                    <td><details class="mrgn-bttm-lg"><summary>Individual and business payments we accept at Canada Post retail locations</summary>
+                    <td><!--<details><summary>Individual and business payments accepted at Canada Post retail locations</summary>
                       <div data-ajax-replace="canada-post.html#ajax-can"></div>
-				  </details>
+				  </details>-->
 					<p>Refer to: <a href="canada-post.html">How to pay at Canada Post</a></p>	</td>
                   </tr>
                   <tr>
@@ -115,9 +116,9 @@
                   </tr>
                   <tr>
                     <td><a href="https://www.paysimply.ca/cra">PaySimply</a></td>
-                    <td><details>
-      <summary>Individual and business payments accepted online through PaySimply</summary>
-      <dl class="dl-horizontal" id="ajax-can">
+                    <td><!--<details>
+      <summary>Individual and business payments accepted online through PaySimply</summary>-->
+      <dl id="ajax-paysimply">
         <dt>Indivduals</dt>
         <dd>
           <ul class="fa-ul">
@@ -155,7 +156,7 @@
           </ul>
         </dd>
 			</dl>
-        </details></td>
+        <!--</details>--></td>
                   </tr>
                   <tr>
                     <td><a href="http://www.payworks.ca/">Payworks</a></td>
@@ -200,7 +201,7 @@
 
                 
                 </tbody>
-              </table>
+              </table></span>
 
             </div>
          </div>
