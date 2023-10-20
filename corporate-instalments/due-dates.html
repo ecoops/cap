@@ -334,8 +334,8 @@
 	<h2 id="instalments">Instalment due dates</h2>
 	<p>The <strong>first instalment payment</strong> is due:</p>
 	<ul class="fa-ul">
-		<li><span class="fa-li"><span class="far fa-calendar-alt fa-li text-muted"></span></span><strong>Monthly instalments:</strong> one month <strong>less a day</strong> from the starting day of your tax year</li>
-		<li><span class="fa-li"><span class="far fa-calendar-alt fa-li text-muted"></span></span><strong>Quarterly instalments (if eligible):</strong> one quarter <strong>less a day</strong> from the starting day of your tax year</li>
+		<li><span class="fa-li"><span class="far fa-calendar-alt text-muted"></span></span><strong>Monthly instalments:</strong> one month <strong>less a day</strong> from the starting day of your tax year</li>
+		<li><span class="fa-li"><span class="far fa-calendar-alt text-muted"></span></span><strong>Quarterly instalments (if eligible):</strong> one quarter <strong>less a day</strong> from the starting day of your tax year</li>
 	</ul>
 	<p>The rest of your instalment payments are due on the <strong>same day</strong> of each month or each quarter that follows.</p>
 	<p><mark>After making your first corporate instalment payment</mark>, you can view your instalment due dates by using the &quot;Calculate and pay instalment payments&quot; service in:</p>
@@ -375,30 +375,41 @@
 	</details>
 
 	<h2 id="balance-due-day">Balance-due day</h2>
-	<p>The balance-due day is the date by which you have to pay the remainder of the tax you owe for the tax year.</p>
-	<p>Generally, the balance-due day for corporation income taxes is:</p>
+	<p>The balance-due day is the date by which you have to pay the remainder of the tax you owe for the tax year after you have deducted the instalments already made for the year.</p>
+	<p>Generally, the balance-due day for corporate income taxes is:</p>
 	<ul class="fa-ul">
-		<li><span class="fa-li"><span class="far fa-calendar-alt fa-li text-muted"></span></span><strong>Two months</strong> after the end of your tax year</li>
+		<li><span class="fa-li"><span class="far fa-calendar-alt text-muted"></span></span><strong>Two months</strong> after the end of your tax year</li>
 	</ul>
-	<p>Typical corporate income tax (Parts I, VI, VI.1, XIII.1) payments may qualify for a balance-due day <strong>three months</strong> after the end of your tax year, if all <strong>three</strong> of the following are met:</p>
-	<ul>
-		<li>The corporation is a <abbr title="Canadian Controlled Private Corporation">CCPC</abbr> throughout the tax year</li>
-		<li>The corporation claimed the small business deduction for the current or previous tax year</li>
-		<li>Either of the following criteria are met:
-			<ul>
-				<li>The corporation's taxable income for the previous tax year does not exceed its business limit for that tax year (if the corporation <strong>is not associated</strong> with any other corporation during the tax year)</li>
-				<li>The total of the taxable incomes of <strong>all</strong> the associated corporations for their last tax year ending in the previous calendar year does not exceed the total of their business limits for those tax years (if the corporation <strong>is associated</strong> with any other corporation during the tax year)</li>
-			</ul>
-		</li>
-	</ul>
-	<mark>Might be a missing balance-due day requirement for Parts III and XII.6?</mark>
-	<h3>Changes to your business</h3>
-	<p>An amalgamation or a wind-up will change your busine
 	<details>
-		<summary>Amalgamations</summary>
+		<summary>CCPCs may be eligible for balance-due day <strong>three months</strong> after the end of your tax year</summary>
+		<p><strong>Typical corporate income tax (Parts I, VI, VI.1, XIII.1)</strong> payments may qualify for a balance-due day <strong>three months</strong> after the end of your tax year, if all <strong>three</strong> of the following conditions are met:</p>
+		<ul>
+			<li>The corporation is a <abbr title="Canadian Controlled Private Corporation">CCPC</abbr> throughout the tax year</li>
+			<li>The corporation claimed the small business deduction for the current or previous tax year</li>
+			<li><strong>Either</strong> of the following criteria are met:
+				<ul>
+					<li>The corporation's taxable income for the previous tax year does not exceed its business limit for that tax year (if the corporation <strong>is not associated</strong> with any other corporation during the tax year)</li>
+					<li>The total of the taxable incomes of <strong>all</strong> the associated corporations for their last tax year ending in the previous calendar year does not exceed the total of their business limits for those tax years (if the corporation <strong>is associated</strong> with any other corporation during the tax year)</li>
+				</ul>
+			</li>
+		</ul>
+		<p>For the purposes of <strong>calculating a new corporation's taxable income</strong> when they were created from an amalgamation or wind-up, you must use the predecessor corporation's income:</p>
+		<details>
+			<summary>Amalgamations</summary>
+			<p>The total taxable income is the total of the predecessor corporations' taxable income for their tax years that ended when the new corporation arose from an amalgamation.</p>
+			<p>This calculation for total taxable income applies to the balance-due day deadline calculation as well as determining the business limit.</p>
+		</details>
+		<details>
+			<summary>Wind-ups</summary>
+			<p>The taxable income for the previous tax year, after it receives the assets of a subsidiary corporation that is winding up, is the total of:</p>
+			<ul>
+				<li>The parent corporation's taxable income for that year</li>
+				<li>The subsidiary corporation's taxable income for its tax years ending in the calendar year that the parent corporation's previous tax year ended</li>
+			</ul>
+			<p>This calculation for total taxable income applies to the balance-due day deadline calculation as well as determining the business limit.</p>
+		</details>
 	</details>
-	
-	
+	<mark>Might be a missing balance-due day requirement for Parts III and XII.6?</mark>
 	
 	<details>
 		<summary><mark>Original content</mark></summary>
@@ -479,7 +490,27 @@
 					<h2 id="mlgmtns">Amalgamations</h2>
 			<p>The <strong>balance-due day</strong> of a new corporation formed after an amalgamation has taken place will be affected by the new corporation's taxable income for the previous year. This taxable income is the total of the predecessor corporations' taxable income for their tax years that ended just before they amalgamated. See paragraph 87(2)(oo.1) of the <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/">Income Tax Act</a>.</p>
 			<p>The same rule applies for determining the business limit.</p>
-
+			<details>
+				<summary><mark>87.2.oo.1 of ITA</mark></summary>
+				<ul class="list-unstyled">
+					<li>
+						<p class="MarginalNote"><span class="wb-invisible">Marginal note:</span>Refundable investment tax credit and balance-due day</p>
+						<p class="Paragraph" id="291570"><span class="lawlabel">(oo.1)</span>&nbsp;for the purpose of applying the definition <span class="DefinitionRef"><dfn>qualifying corporation</dfn></span> in subsection 127.1(2), and subparagraph (d)(i) of the definition <span class="DefinitionRef"><dfn>balance-due day</dfn></span> in subsection 248(1), to any corporation, the new corporation is deemed to have had</p>
+						<ul class="ProvisionList">
+							<li>
+								<p class="Subparagraph" id="291572"><span class="lawlabel">(i)</span>&nbsp;a particular taxation year that</p>
+								<ul class="ProvisionList">
+									<li><p class="Clause" id="291573"><span class="lawlabel">(A)</span>&nbsp;where it was associated with another corporation in the new corporation’s first taxation year, ended in the calendar year that precedes the calendar year in which that first year ends, and</p></li>
+									<li><p class="Clause" id="291574"><span class="lawlabel">(B)</span>&nbsp;where clause 87(2)(oo.1)(i)(A) does not apply, immediately precedes that first year,</p></li>
+								</ul>
+							</li>
+							<li><p class="Subparagraph" id="291575"><span class="lawlabel">(ii)</span>&nbsp;taxable income for the particular year (determined before taking into consideration the specified future tax consequences for the particular year) equal to the total of all amounts each of which is a predecessor corporation’s taxable income for its taxation year that ended immediately before the amalgamation (determined before taking into consideration the specified future tax consequences for that year),</p></li>
+							<li><p class="Subparagraph" id="291576"><span class="lawlabel">(iii)</span>&nbsp;a business limit for the particular year equal to the total of all amounts each of which is a predecessor corporation’s business limit for its taxation year that ended immediately before the amalgamation, and</p></li>
+							<li><p class="Subparagraph" id="291577"><span class="lawlabel">(iv)</span>&nbsp;a qualifying income limit for the particular year equal to the total of all amounts each of which is a predecessor corporation’s qualifying income limit for its taxation year that ended immediately before the amalgamation;</p></li>
+						</ul>
+					</li>
+				</ul>	
+			</details>
 				
 
 
@@ -498,199 +529,6 @@
 
 				
 
-	</details>
-		
-	<h2 id="changes">Situations that may change your due date</h2>
-	<p>[text]</p>	   
-
-	<details>
-		<summary><mark>Would include the special situations</mark></summary>
-		<h2 id="shrt">Short&nbsp;tax year</h2>
-		    
-		
-		
-		</div>
-		<div class="mwsbodytext text parbase section">
-		    
-		
-		    
-		        <h3>Current year</h3>
-			<p>Your tax year may be less than <span class="nowrap"><strong>12 months</strong></span>. If so, you have to pay one-twelfth or one-tenth of your tax each complete <strong>month</strong> in the tax year, depending on which calculation option you choose (see <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-payments/paying-instalments/instalment-requirements/calculating-instalments-parts-1-xiii-1-tax-provincial-territorial-tax.html">Calculating instalments of Parts I, VI, VI.1, and&nbsp;XIII.1 tax, and provincial and territorial tax</a> for more information on the different options). If you are an <strong>eligible small Canadian-controlled private corporation (CCPC)</strong>, you have to pay <span class="nowrap">one-quarter</span> or <span class="nowrap">one-third</span> of your tax each complete <strong>quarter</strong> in the tax year.</p>
-			<p>You <strong>do not</strong> have to make an instalment payment for a tax year that is shorter than one month, or in the case of an eligible small <abbr title="Canadian-controlled private corporation">CCPC</abbr>, shorter than one quarter.</p>
-			<p>The tax you <strong>did not</strong> pay in instalments is due on your <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-payments/paying-your-balance-corporation-tax.html#d_dy">balance-due day</a>.</p>
-			
-			    
-			
-			
-			</div>
-			<div class="mwspanel section">
-			
-			
-			
-			
-			    
-			
-			    
-			
-			    <section class="panel panel-default well">
-			        <header class="panel-heading">
-			            <h4 class="panel-title">Example  </h4>
-			        </header>
-			
-			        <div class="panel-body">
-			            <div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <p>Corporation C's previous tax year end was January 14, 2023. Its current tax year is cut short as follows:</p>
-			<ul>
-			<li>Start of tax year: January 15, 2023</li>
-			<li>End of tax year: August 31, 2023</li>
-			</ul>
-			<p>Tax owed by instalments under <span class="nowrap">option 2:</span>&nbsp;$300,000.</p>
-			<p>Seven <strong>monthly</strong> instalments of&nbsp;$25,000 (1/12 of&nbsp;$300,000) each must be paid on <span class="nowrap">February 14</span>, <span class="nowrap">March 14</span>, <span class="nowrap">April 14</span>, <span class="nowrap">May 14</span>, <span class="nowrap">June 14</span>, <span class="nowrap">July 14</span>, and <span class="nowrap">August 14</span>.</p>
-			<p>If the actual tax for the year is&nbsp;$400,000, the remaining&nbsp;$225,000 is due by the balance-due day.</p>
-			<p>For an eligible small <abbr title="Canadian-controlled private corporation">CCPC</abbr>, two <strong>quarterly</strong> instalments of&nbsp;$75,000 (1/4 of&nbsp;$300,000) each must be paid on April 14 and July 14.</p>
-			<p>If the actual tax for the year is&nbsp;$400,000, the remaining&nbsp;$250,000 is due by the balance-due day.</p>
-			
-			    
-			
-			
-			</div>
-			
-			
-			        </div>
-			
-			        
-			
-			        
-			    </section>
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <h3>Previous year</h3>
-			 <p>For option 2 or 3, when a previous tax year is less than 12 months, the tax payable for that year is adjusted to a <span class="nowrap">12-month</span> equivalent <span class="nowrap">[Regulation 5301(1)].</span> This is called the <span class="nowrap"><strong>adjusted base</strong></span>.</p>  <p>To calculate the adjusted base, <strong>divide</strong> 365 by the number of days in the tax year. <strong>Multiply</strong> this figure by the actual tax payable for that year.</p>  
-			    
-			
-			
-			</div>
-			<div class="mwspanel section">
-			
-			
-			
-			
-			    
-			
-			    
-			
-			    <section class="panel panel-default">
-			        <header class="panel-heading">
-			            <h4 class="panel-title">Note</h4>
-			        </header>
-			
-			        <div class="panel-body">
-			            <div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			         <p>365 is not adjusted for the leap year.</p>  
-			    
-			
-			
-			</div>
-			
-			
-			        </div>
-			
-			        
-			
-			        
-			    </section>
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <p>For option 2 or 3, when a previous tax year is <strong>less than 183</strong> <span class="nowrap"><strong>days</strong></span>, the adjusted base is whichever of the following amounts is greater:</p>
-			<ul>
-			<li>the adjusted base for that tax year</li>
-			<li>the adjusted base for the next previous tax year of more than <span class="nowrap">182 days [Regulation 5301(3)]</span></li>
-			</ul>
-			
-			    
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <h2 id="lngr">Fluctuating filing period ending (fiscal period longer than 365 days)</h2>
-			<p>No change to the fiscal period is considered to occur when a corporation follows the practice of ending its fiscal period on a chosen day of the week that is nearest to a certain day of the year, provided that the resulting period <strong>does not</strong> exceed <span class="nowrap">53 weeks</span>.</p>
-			<p><strong>Reference</strong><br>
-			Subsection 249(3) of the <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/?=">Income Tax Act</a>.</p>
-			
-			    
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <h2 id="mlgmtns">Amalgamations</h2>
-			<p>When a new corporation is formed by amalgamation, it is treated as a continuation of the predecessor corporations. See Section 87 of the <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/">Income Tax Act</a>.</p>
-			<p>Generally, the instalment base of the new corporation is the total of the predecessor corporations' instalment bases. See Regulation 5301(4) of the <a href="https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.%2C_c._945/">Income Tax&nbsp;Regulations</a>.</p>
-			<p>See the <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t7b-corp/corporation-instalment-guide.html#ppdnx_1">example of instalment base&nbsp;– amalgamations</a>.</p>
-			
-			    
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <h2 id="wnd-ps">Wind-ups</h2>
-			<p>When a subsidiary corporation is wound up into a Canadian parent corporation, the parent corporation generally has to include, in addition to its own instalment base, the instalment base of its subsidiary corporation. See subsection 88(1) of the <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/">Income Tax Act</a> and Regulation 5301(6) of the <a href="https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.%2C_c._945/">Income Tax Regulations</a>.</p>
-			<p>See also the <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t7b-corp/corporation-instalment-guide.html#ppdnx_2">example of instalment base&nbsp;– wind-ups</a>.</p>
-			
-			    
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <h2 id="rllvrs">Transfers or rollovers</h2>
-			<p>There are situations where, in a transaction to which subsection 85(1), 85(2), or <span class="nowrap">142.7(3)</span> of the <a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/">Income Tax Act</a> applies, a corporation receives all or substantially all (generally 90% or more) of the property of another corporation that it does not deal with at arm's length.&nbsp;</p>
-			<p>In this case, the corporation has to include, in addition to its own instalment base, the instalment base of the other corporation. See Regulation&nbsp;5301(8) of the <a href="https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.%2C_c._945/">Income Tax Regulations</a>.</p>
-			<p>See the <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t7b-corp/corporation-instalment-guide.html#ppndx_3">example of instalment base&nbsp;– transfers or rollovers</a>.</p>
-			
-			    
-			
-			
-			</div>
-			<div class="mwsbodytext text parbase section">
-			    
-			
-			    
-			        <h2 id="cntrl">Change of&nbsp;control</h2>
-			<p>If there is a change of control of a corporation under subsection 249(4) of the <a class="nowrap" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/">Income Tax Act</a>, the corporation continues to exist as it was before for instalment&nbsp;purposes.</p>
-			<p>When there is a <a href="#shrt">short tax year</a>, you must follow the special rules for short tax years.</p>
-			
-			    
-			
-			
-			
-			</div>
 	</details>
 	
 		
